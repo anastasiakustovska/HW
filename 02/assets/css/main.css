@@ -1,0 +1,69 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #e5bbef;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+}
+
+header * {
+    margin: auto;
+}
+
+main {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    color: #ce08fa;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav--logo {
+    width: 130px;
+}
+
+.order-form {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.form {
+    width: 40%;
+}
+
+.nav--list li{
+    display: inline;
+    margin: 0 10px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.marin-small {
+    margin-bottom: 15px;
+}
