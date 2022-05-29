@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Free landing page</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
+<header class="container filter_shadow">
     <nav>
-        <ul class="nav--list">
+        <ul class="nav_list">
             <li>
-                <a href="#home">Home</a>
+                <a class="active_link" href="#home">Home</a>
             </li>
             <li>
                 <a href="#about-me">
@@ -37,7 +37,6 @@
             </li>
         </ul>
     </nav>
-    <hr>
 </header>
 <main>
     <section id="home">
@@ -45,15 +44,15 @@
             <h1>
                 Denis Novikov
             </h1>
-                <img class="banner" alt="Main photo of Denis Novikov" src="assets/images/Photo.jpg">
+            <img alt="Main photo of Denis Novikov" class="banner" src="assets/images/Photo.jpg">
         </div>
     </section>
-    <section id="about-me" class="text_center">
+    <section class="text_center" id="about-me">
         <div class="container">
             <h2>
                 About me
             </h2>
-            <div id="about_me_description" class="text_center">
+            <div class="text_center" id="about_me_description">
                 <p>
                     Hi, I'm Denis – UX/UI designer from Minsk.
                     I'm interested in design and everything connected with it.
@@ -70,83 +69,83 @@
             </div>
         </div>
     </section>
-    <section id="skills" class="text_center">
+    <section class="text_center" id="skills">
         <div class="container">
-        <h2>
-            Skills
-        </h2>
-        <p id="skills--description">
-            I work in such programs as
-        </p>
+            <h2>
+                Skills
+            </h2>
+            <p id="skills_description">
+                I work in such programs as
+            </p>
             <div class="d_inline_block tool_list">
-        <div>
-            <div class="tool">
-                <img alt="Adobe Photoshop" src="assets/images/adobephotoshop.png">
-                <p class="t">
-                    Adobe
-                    Photoshop
-                </p>
-            </div>
-            <div class="stars">
-                <img src="assets/images/star-filled.png" alt="Star">
-                <img src="assets/images/star-filled.png" alt="Star">
-                <img src="assets/images/star-filled.png" alt="Star">
-                <img src="assets/images/star-filled.png" alt="Star">
-                <img src="assets/images/star.png" alt="Star">
-            </div>
-        </div>
-        <div>
-            <div class="tool">
-                <img alt="Adobe Illustrator" src="assets/images/adobeillustrator.png">
-                <p>
-                    Adobe
-                    Illustrator
-                </p>
-            </div>
-            <div class="stars">
-                <img src="assets/images/star-filled.png" alt="Star">
-                <img src="assets/images/star-filled.png" alt="Star">
-                <img src="assets/images/star-filled.png" alt="Star">
-                <img src="assets/images/star.png" alt="Star">
-                <img src="assets/images/star.png" alt="Star">
-            </div>
-        </div>
-        <div>
-            <div class="tool">
-                <img alt="Adobe After Effects" src="assets/images/adobeaftereffects.png">
-                <p>
-                    Adobe
-                    After Effects
-                </p>
-            </div>
-            <div class="stars">
-                <img src="assets/images/star-filled.png" alt="Star">
-                <img src="assets/images/star-filled.png" alt="Star">
-                <img src="assets/images/star-filled.png" alt="Star">
-                <img src="assets/images/star-filled.png" alt="Star">
-                <img src="assets/images/star.png" alt="Star">
-            </div>
-        </div>
-        <div>
-            <div class="tool">
-                <img alt="Figma" src="assets/images/figma.png">
-                <p>
-                    Figma
-                </p>
-            </div>
-            <div class="stars">
-                <img src="assets/images/star-filled.png" alt="Star">
-                <img src="assets/images/star-filled.png" alt="Star">
-                <img src="assets/images/star-filled.png" alt="Star">
-                <img src="assets/images/star-filled.png" alt="Star">
-                <img src="assets/images/star.png" alt="Star">
-            </div>
-        </div>
+                <div>
+                    <div class="tool">
+                        <img alt="Adobe Photoshop" src="assets/images/adobephotoshop.png">
+                        <p class="t">
+                            Adobe
+                            Photoshop
+                        </p>
+                    </div>
+                    <div class="stars">
+                        <img alt="Star" src="assets/images/star-filled.png">
+                        <img alt="Star" src="assets/images/star-filled.png">
+                        <img alt="Star" src="assets/images/star-filled.png">
+                        <img alt="Star" src="assets/images/star-filled.png">
+                        <img alt="Star" src="assets/images/star.png">
+                    </div>
+                </div>
+                <div>
+                    <div class="tool">
+                        <img alt="Adobe Illustrator" src="assets/images/adobeillustrator.png">
+                        <p>
+                            Adobe
+                            Illustrator
+                        </p>
+                    </div>
+                    <div class="stars">
+                        <img alt="Star" src="assets/images/star-filled.png">
+                        <img alt="Star" src="assets/images/star-filled.png">
+                        <img alt="Star" src="assets/images/star-filled.png">
+                        <img alt="Star" src="assets/images/star.png">
+                        <img alt="Star" src="assets/images/star.png">
+                    </div>
+                </div>
+                <div>
+                    <div class="tool">
+                        <img alt="Adobe After Effects" src="assets/images/adobeaftereffects.png">
+                        <p>
+                            Adobe
+                            After Effects
+                        </p>
+                    </div>
+                    <div class="stars">
+                        <img alt="Star" src="assets/images/star-filled.png">
+                        <img alt="Star" src="assets/images/star-filled.png">
+                        <img alt="Star" src="assets/images/star-filled.png">
+                        <img alt="Star" src="assets/images/star-filled.png">
+                        <img alt="Star" src="assets/images/star.png">
+                    </div>
+                </div>
+                <div>
+                    <div class="tool">
+                        <img alt="Figma" src="assets/images/figma.png">
+                        <p>
+                            Figma
+                        </p>
+                    </div>
+                    <div class="stars">
+                        <img alt="Star" src="assets/images/star-filled.png">
+                        <img alt="Star" src="assets/images/star-filled.png">
+                        <img alt="Star" src="assets/images/star-filled.png">
+                        <img alt="Star" src="assets/images/star-filled.png">
+                        <img alt="Star" src="assets/images/star.png">
+                    </div>
+                </div>
             </div>
 
         </div>
     </section>
-    <section id="portfolio" class="text_center">
+    <section class="text_center" id="portfolio">
         <div class="container">
             <h2>Portfolio</h2>
             <div class="work_example">
@@ -183,7 +182,7 @@
     </section>
 </main>
 <footer>
-    <section>
+    <section class="text_center" id="contacts">
         <div class="container">
             <h2>
                 Contacts
@@ -194,8 +193,13 @@
             <p>
                 You are welcome!
             </p>
-            <a href="#">Send message
-            </a>
+            <button
+                    class="bg_black"
+                    id="send_message"
+                    type="button"
+            >
+                Send message
+            </button>
         </div>
         <div class="socials">
             <a href="#" rel="noindex nofollow noreffer" target="_blank">
@@ -211,10 +215,15 @@
                 <img alt="Dribble" src="assets/images/dribble.png">
             </a>
         </div>
-        <div class="container">
+        <div class="like">
             <p>
                 Like me on
-                LinkedIn, Instagram, Behance, Dribble
+            </p>
+            <p>
+                LinkedIn, Instagram, Behance,
+            </p>
+            <p>
+                Dribble
             </p>
         </div>
     </section>
