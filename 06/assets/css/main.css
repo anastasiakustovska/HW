@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Railway", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.main {
+    padding: 105px 0;
+    background-color: #1d1c1c;
+}
+
+.main_col {
+    display: inline-block;
+    max-width: 345px;
+    text-align: center;
+}
+
+.main_img {
+    width: 80px;
+    height: 80px;
+    background-color: #ffae00;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    text-align: center;
+    line-height: 80px;
+    margin: 0 auto;
+}
+.main_img img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main_col h2 {
+    margin: 40px 0 35px ;
+    text-align: center;
+    font-size: 24px;
+}
+.center{
+    margin: 0 15px;
+}
