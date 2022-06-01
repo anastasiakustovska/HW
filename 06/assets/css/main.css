@@ -50,3 +50,38 @@ body {
 .center{
     margin: 0 15px;
 }
+.footer_img{
+    text-align: center;
+    margin: 0 auto;
+}
+footer{
+    background-color: #2a252b;
+}
+
+.footer_text {
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    width: 225px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.copyright{
+    margin-bottom: 40px;
+    margin-top: 70px;
+    text-align: center;
+}
+.footer_img img{
+    margin: 120px 0 32px;
+}
+.footer_images{
+    text-align: center;
+    margin-top: 16px;
+}
+.footer_images > a{
+    margin: 0 8px;
+}
+.kasper_link{
+    color: #19c8fa;
+    text-decoration: none;
+}
