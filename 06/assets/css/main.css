@@ -38,23 +38,28 @@ body {
     line-height: 80px;
     margin: 0 auto;
 }
-.main_img img{
+
+.main_img img {
     display: inline-block;
     vertical-align: middle;
 }
+
 .main_col h2 {
-    margin: 40px 0 35px ;
+    margin: 40px 0 35px;
     text-align: center;
     font-size: 24px;
 }
-.center{
+
+.center {
     margin: 0 15px;
 }
-.footer_img{
+
+.footer_img {
     text-align: center;
     margin: 0 auto;
 }
-footer{
+
+footer {
     background-color: #2a252b;
 }
 
@@ -66,22 +71,26 @@ footer{
     padding: 20px 0;
 }
 
-.copyright{
-    margin-bottom: 40px;
-    margin-top: 70px;
-    text-align: center;
-}
-.footer_img img{
+.footer_img img {
     margin: 120px 0 32px;
 }
-.footer_images{
+
+.footer_images {
     text-align: center;
     margin-top: 16px;
 }
-.footer_images > a{
+
+.footer_images > a {
     margin: 0 8px;
 }
-.kasper_link{
+
+.kasper_link {
     color: #19c8fa;
     text-decoration: none;
+}
+
+.copyright {
+    margin-top: 70px;
+    text-align: center;
+    padding-bottom: 40px;
 }
