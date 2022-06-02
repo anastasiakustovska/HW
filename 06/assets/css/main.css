@@ -60,7 +60,7 @@ body {
 }
 
 footer {
-    background-color: #2a252b;
+    background-color: #121116;
 }
 
 .footer_text {
@@ -69,6 +69,7 @@ footer {
     width: 225px;
     margin: auto;
     padding: 20px 0;
+    font-size: 20px;
 }
 
 .footer_img img {
@@ -78,6 +79,10 @@ footer {
 .footer_images {
     text-align: center;
     margin-top: 16px;
+}
+
+a {
+    text-decoration: none
 }
 
 .footer_images > a {
