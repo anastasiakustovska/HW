@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+}
+
+.container {
+    main-width: 1116px;
+}
+
+.main {
+    border: 25px solid #2B81AC;
+    background-color: #3399cc;
+}
+
+.weather {
+    border: 2px solid white;
+}
+
+.weather-elm {
+    border: 2px solid white;
+    text-align: center;
+    display: inline-block;
+    padding-top: 26px;
+    padding-bottom: 27px;
+    min-height: 100%;
+}
+.weath-elem p{
+    font-family: "Lucida Grande", serif;
+    font-size: 22px;
+    line-height: 26px;
+}
+.weath-elem .cels{
+
+}
+.weath-elem .weath-info {
+    line-height: 53px;
+}
+
+.weath-elem .weath-info img {
+    vertical-align: middle;
+}
+
+.middle {
+    width: 50%;
+}
+
+.weather-type div {
+}
