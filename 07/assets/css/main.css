@@ -34,6 +34,7 @@ a:visited {
     text-align: center;
     height: 46px;
     padding: 13px 25px;
+    border-radius: 4px;
 }
 
 .border_grey {
@@ -47,7 +48,6 @@ a:visited {
 .background_color_main {
     background-color: #FF9900;
     color: #FFF;
-    border-radius: 4px;
 }
 
 .background_color_main:visited {
@@ -76,4 +76,40 @@ li {
 #menu {
     margin-left: 150px;
     margin-right: 150px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+#main_photo{
+    width: 644px;
+    height: 495px;
+    padding-left: 20px;
+}
+
+#product > * {
+    display: inline-block;
+    width: 49%;
+    margin-top: 60px;
+}
+h1{
+    font-size: 44px;
+    font-weight: 700;
+}
+.main_text {
+    max-width: 500px;
+    border-radius: 4px;
+    vertical-align: top;
+    padding-top: 120px;
+}
+
+.main_text>p{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 18px;
+    color: #544837;
+}
+
+.start_button{
 }
