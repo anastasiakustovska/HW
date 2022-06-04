@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 22px;
+}
+
+.inline > * {
+    display: inline-block;
+    margin-right: -6px;
+}
+
+.container {
+    max-width: 1116px;
+    margin: auto;
+}
+
+.main_title {
+    margin-bottom: 39px;
+}
+
+.main {
+    border: 25px solid #2B81AC;
+    background-color: #3399cc;
+    padding-bottom: 119px;
+    padding-top: 66px;
+}
+
+.cell {
+    border: 2px solid #fff;
+    width: calc(25% - 2px);
+    height: 147px;
+    text-align: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.cell-half {
+    width: calc(50% - 4px);
+}
+
+.cell-full {
+    width: calc(100% - 9px);
+}
+
+.info > img {
+    width: 32px;
+    height: 32px;
+}
+
+.lis_color {
+    background-color: #3399CC;
+}
+
+.par_color {
+    background-color: #33CCCC;
+}
+
+.bel-color {
+    background-color: #996699;
+}
+
+.ven_color {
+    background-color: #C24747;
+}
+
+.telav_color {
+    background-color: #E2674A;
+}
+
+.cair_color {
+    background-color: #FFCC66;
+}
+
+.ny_color {
+    background-color: #99CC99;
+}
+
+.nd_color {
+    background-color: #669999;
+}
+
+.sf_color {
+    background-color: #CC6699;
+}
+
+.tok_color {
+    background-color: #339966;
+}
+
+.syd_color {
+    background-color: #666699;
+}
+
+.info .temp {
+    margin-right: 13px;
+    height: 47px;
+    padding: 20px 0;
+}
+
+.final_text {
+    margin-top: 37px;
+}
