@@ -1,0 +1,96 @@
+:before,
+:after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bread_crumbs > span {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    font-family: 'Staatliches', cursive;
+}
+
+.bread_crumbs > span:after {
+    content: " /"
+}
+
+.bread_crumbs > span:last-child:after {
+    content: " ";
+}
+
+.inline > * {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Tourney', cursive;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+}
+
+.bread_crumbs {
+    margin-left: 50px;
+    font-weight: 400;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+header {
+    height: 80px;
+    vertical-align: middle;
+}
+
+#logo {
+    float: right;
+    width: 238px;
+    height: 54px;
+}
+
+article {
+    margin-bottom: 70px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Francois One', sans-serif;
+}
+
+.text_info {
+    margin-bottom: 40px;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+sup {
+    font-family: 'Farro', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    vertical-align: top;
+}
+
+b {
+    font-weight: 700;
+}
+
+.bg_grey {
+    background-color: rgb(216, 213, 213);
+}
