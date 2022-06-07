@@ -51,22 +51,22 @@ input[type="checkbox"] {
     margin-right: 12px;
     width: 19px;
     height: 19px;
+    accent-color: #fff;
 }
 
 input[type="checkbox"]:checked + label {
     text-decoration: line-through;
+    color: #9B96AC;
 }
 
-.list_item:nth-child(2) {
+.list_item:nth-child(2n) {
     background: #7A7593;
-    text-decoration: line-through;
 }
-.list_item:last-child {
-    background: #7A7593;
-    text-decoration: line-through;
+.list_item:nth-child(2){
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .list_item:hover {
-    border: 1px solid #fff;
+    border: 3px solid #fff;
     background: #625E77;
     border-left: 0;
     border-right: 0;
@@ -83,4 +83,3 @@ button{
     cursor: pointer;
     font-size: 18px;
 }
-
