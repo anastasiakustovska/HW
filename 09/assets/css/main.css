@@ -38,6 +38,7 @@ a {
 .bread_crumbs {
     margin-left: 50px;
     font-weight: 400;
+    vertical-align: middle;
 }
 
 .container {
@@ -65,6 +66,10 @@ article {
 h2 {
     text-transform: uppercase;
     font-family: 'Francois One', sans-serif;
+    font-size: 36px;
+    margin-right: 10px;
+    line-height: 48px;
+
 }
 
 .text_info {
@@ -88,7 +93,7 @@ sup {
 }
 
 b {
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .bg_grey {
