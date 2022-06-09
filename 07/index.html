@@ -6,14 +6,15 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="container">
-    <div class="inline">
+<header class="block flex_space_between container">
+    <div>
         <img alt="Logo" src="assets/images/Logo.png">
     </div>
-    <div class="inline" id="menu">
+    <div id="menu">
         <nav>
             <ul class="nav_li">
                 <li>
@@ -44,23 +45,66 @@
         <a class="button background_color_main" href="#">Sing Up</a>
     </div>
 </header>
-<main class="container">
-    <div class="inline" id="product">
-        <div class="inline main_text">
-            <h1>
-                The Design Thinking superpowers
-            </h1>
-            <p>
-                Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine
-                your
-                next user experience.
-            </p>
-            <a class="button background_color_main start_button" href="#">Get started</a>
+<main>
+    <div class="container block flex_space_between" id="product">
+        <div class="block flex_column main_text">
+            <div class="heading">
+                <h1>
+                    The Design Thinking superpowers
+                </h1>
+            </div>
+            <div class="block flex_column">
+                <p>
+                    Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine
+                    your
+                    next user experience.
+                </p>
+                <a class="button background_color_main start_button" href="#">Get started</a>
+            </div>
         </div>
-        <div class="inline">
+        <div>
             <img alt="Photo" id="main_photo" src="assets/images/Image.png">
         </div>
     </div>
+    <div id="feature_wrapper">
+        <div class="container block flex_column" id="feature_list">
+            <div class="heading">
+                <h2>We design tools to unveil your superpowers</h2>
+            </div>
+            <div class="icons block">
+                <div class="feature">
+                    <img src="assets/images/violet.png">
+                    <h3>First click tests</h3>
+                    <p>While most people enjoy casino gambling.</p>
+                </div>
+                <div class="feature">
+                    <img src="assets/images/yellow.png">
+                    <h3>Design surveys</h3>
+                    <p>Sports betting, lottery and bingo playing for the fun</p>
+                </div>
+                <div class="feature">
+                    <img src="assets/images/red.png">
+                    <h3>Preference tests</h3>
+                    <p>The Myspace page defines the individual.</p>
+                </div>
+                <div class="feature">
+                    <img src="assets/images/blue.png">
+                    <h3>Five second tests</h3>
+                    <p>Personal choices and the overall personality of the person. </p>
+                </div>
+            </div>
+        </div>
+        <div class="container sign_up_now">
+            <a class="button background_color_main" href="#">
+                Sign up Now
+            </a>
+        </div>
+    </div>
 </main>
+<footer>
+    <div class="block">
+        <img alt="Logo" src="assets/images/Logo.png">
+    </div>
+</footer>
 </body>
 </html>
