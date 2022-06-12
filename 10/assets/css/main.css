@@ -1,0 +1,62 @@
+:before,
+:after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F7F7F7;
+}
+.container {
+    background: #fff;
+}
+main {
+    padding-top: 55px;
+}
+.name_form{
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.sign_up_wrapper{
+    padding: 35px;
+}
+
+.sign_up{
+    width: 100%;
+}
+
+.label_custom{
+    margin-bottom: 7px;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(84, 84, 84, 1);
+}
+.input_custom{
+margin-bottom: 20px;
+}
+
+.text_info{
+    font-weight: 400;
+    font-size: 13px;
+}
+.sign_up_info{
+    max-width: 410px;
+}
+
+.color_grey{
+    color: rgba(150, 150, 150, 1);
+}
+.margin_radio{
+    margin-right: 21px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.login-link{
+    margin-left: 20px;
+}
