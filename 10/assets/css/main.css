@@ -11,6 +11,11 @@ body {
 }
 .bg_white {
     background: #fff;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background: #007BFF;
 }
 main {
     padding-top: 55px;
@@ -19,6 +24,7 @@ main {
     font-weight: 500;
     font-size: 24px;
     margin-bottom: 20px;
+    color: #1C1C1C;
 }
 .sign_up_wrapper{
     padding: 35px;
@@ -78,6 +84,7 @@ a{
     width: 30px;
     border-radius: 6px;
     background: transparent;
+    padding-bottom: 9px;
 }
 
 .photo_button{
@@ -94,4 +101,52 @@ a{
 
 label {
     cursor: pointer;
+}
+
+.form-control:focus,.form-check-input:active, .form-check-input:checked  {
+    border-color: rgba(0, 123, 255, 1);
+    box-shadow: none;
+}
+
+.form_small {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+}
+
+.update_btn {
+    width: 150px;
+}
+
+.form-control[type="select"], .form-control[type="text"] {
+    padding: 8px 10px;
+}
+
+.form-control {
+    border: 1px solid #E4E4E4;
+}
+
+hr {
+    color: #E4E4E4;
+    margin: 0;
+    opacity: 1;
+}
+
+.file_limit {
+    margin-top: 9px;
+}
+
+.form-control[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+.click_info {
+    margin-bottom: 20px;
+}
+
+.form_text {
+    margin-top: 20px;
 }
