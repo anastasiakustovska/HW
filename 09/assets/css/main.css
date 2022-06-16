@@ -133,7 +133,7 @@ body {
 }
 
 .sidebar a {
-    font-family: Francois One;
+    font-family: Francois One, sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 48px;
@@ -203,7 +203,7 @@ body {
     flex-wrap: wrap;
 }
 
-.margin_highlight{
+.margin_highlight {
     margin-right: 20px;
 }
 
@@ -213,4 +213,19 @@ body {
 
 .container.extra > .text_info:first-child {
     margin-left: 15px;
+}
+
+#background_image {
+    position: absolute;
+    z-index: -20;
+    width: 100vw;
+}
+
+#background_image > img {
+    float: right;
+    margin-top: 150px;
+}
+
+.page_2 {
+    font-family: 'Staatliches', cursive
 }
