@@ -114,8 +114,6 @@ body {
 .flex {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-
 }
 
 .sidebar {
@@ -161,10 +159,14 @@ body {
     border-radius: 8px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 30px;
 }
 
 .card__row {
-    margin-bottom: 30px;
+    margin: auto;
+    border-bottom: 1px solid rgba(191, 191, 191, 1);
+    border-top: 1px solid rgba(191, 191, 191, 1);
+    padding-top: 20px;
 }
 
 .card_inner {
@@ -195,4 +197,20 @@ body {
 
 .card:hover .card_inner {
     transform: rotateX(-180deg);
+}
+
+.flex_wrap {
+    flex-wrap: wrap;
+}
+
+.margin_highlight{
+    margin-right: 20px;
+}
+
+.container.extra {
+    max-width: 1200px;
+}
+
+.container.extra > .text_info:first-child {
+    margin-left: 15px;
 }
