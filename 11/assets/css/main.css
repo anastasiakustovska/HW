@@ -1,0 +1,127 @@
+:before,
+:after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.d-flex{
+    justify-content: center;
+    display: flex;
+}
+.header {
+    width: 100%;
+    padding: 29px 0;
+    vertical-align: middle;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background: #FFFFFF;
+    border-bottom: 1px solid black;
+}
+header > * {
+    vertical-align: middle;
+}
+
+.d-flex__justify--space-between {
+    justify-content: space-between;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.who-we-are{
+    background: rgba(246, 246, 246, 1);
+}
+
+.wrapper {
+    background: rgba(246, 246, 246, 1) ;
+}
+
+.who-we-are__main-heading {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.13em;
+    margin-top: 150px;
+    margin-bottom: 64px;
+    text-transform: uppercase;
+}
+
+.who-we-are__text{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.who-we-are__team-member-info {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+}
+
+.who-we-are__photo-overlay{
+    position: absolute;
+    background: #18B5DC;
+    color: #f1f1f1;
+    width: 100%;
+    opacity:0;
+    height: 100%;
+    font-size: 20px;
+    top: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.who-we-are__photo {
+    width: 270px;
+    height: 270px;
+    margin-bottom: 20px;
+}
+
+.who-we-are__photo:hover .who-we-are__photo-overlay {
+    opacity: 1;
+    height: 270px;
+}
+
+.who-we-are__team-member {
+    width: 270px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+.d-flex__align-items__center{
+    align-items: center;
+}
+.who-we-are__social-link{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.who-we-are__team-member-name{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.who-we-are__team-member-position{
+
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #646464;
+}
