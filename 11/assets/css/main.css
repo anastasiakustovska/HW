@@ -7,7 +7,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-.d-flex{
+.d-flex {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -28,6 +28,7 @@ a {
     background: #FFFFFF;
     border-bottom: 1px solid #BDBDBD;
 }
+
 header > * {
     vertical-align: middle;
 }
@@ -35,16 +36,18 @@ header > * {
 .d-flex__justify--space-between {
     justify-content: space-between;
 }
+
 .container {
     width: 80%;
     margin: auto;
 }
-.who-we-are{
+
+.who-we-are {
     padding-top: 150px;
     padding-bottom: 150px;
 }
 
-.who-we-are__highlight{
+.who-we-are__highlight {
     width: 45px;
     height: 4px;
     background: #DDDBDB;
@@ -52,10 +55,10 @@ header > * {
 }
 
 .wrapper {
-    background: rgba(246, 246, 246, 1) ;
+    background: rgba(246, 246, 246, 1);
 }
 
-.button{
+.button {
     text-align: center;
     padding: 10px 20px;
     width: 130px;
@@ -66,7 +69,7 @@ header > * {
     cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
     color: rgba(255, 255, 255, 1);
     background: rgba(24, 181, 220, 1);
     border: rgba(24, 181, 220, 1);
@@ -83,7 +86,7 @@ header > * {
     text-transform: uppercase;
 }
 
-.who-we-are__text{
+.who-we-are__text {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -101,12 +104,12 @@ header > * {
     max-width: 300px;
 }
 
-.who-we-are__photo-overlay{
+.who-we-are__photo-overlay {
     position: absolute;
     background: #18B5DC;
     color: #f1f1f1;
     width: 100%;
-    opacity:0;
+    opacity: 0;
     height: 100%;
     font-size: 20px;
     top: 0;
@@ -135,14 +138,17 @@ header > * {
 a {
     text-decoration: none;
 }
-.d-flex__align-items__center{
+
+.d-flex__align-items__center {
     align-items: center;
 }
-.who-we-are__social-link{
+
+.who-we-are__social-link {
     margin-left: 2px;
     margin-right: 2px;
 }
-.who-we-are__team-member-name{
+
+.who-we-are__team-member-name {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -150,7 +156,7 @@ a {
     line-height: 22px;
 }
 
-.who-we-are__team-member-position{
+.who-we-are__team-member-position {
 
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -160,8 +166,12 @@ a {
     color: #646464;
 }
 
-.nav-list {
+.nav-list, .footer-nav-list {
     list-style: none;
+}
+
+.footer-nav-list{
+    margin-top: 32px;
 }
 .nav-list__item-link {
     color: #000000;
@@ -178,15 +188,22 @@ a {
     flex-direction: column;
 }
 
-.social-list__item__default{
+.social-list__item__default {
     display: block;
 }
-.social-list__item__hover{
+
+.social-list__item__hover {
     display: none;
 }
+
 .social-list__item:hover > .social-list__item__default {
     display: none;
 }
+
 .social-list__item:hover > .social-list__item__hover {
     display: block;
+}
+
+.social-list__item{
+    margin: 28px 5px 40px;
 }
