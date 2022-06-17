@@ -10,7 +10,13 @@
 .d-flex{
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
 }
+
+a {
+    cursor: pointer;
+}
+
 .header {
     width: 100%;
     padding: 29px 0;
@@ -20,7 +26,7 @@
     text-align: center;
     position: relative;
     background: #FFFFFF;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #BDBDBD;
 }
 header > * {
     vertical-align: middle;
@@ -34,11 +40,36 @@ header > * {
     margin: auto;
 }
 .who-we-are{
-    background: rgba(246, 246, 246, 1);
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.who-we-are__highlight{
+    width: 45px;
+    height: 4px;
+    background: #DDDBDB;
+    margin: 20px 0 40px;
 }
 
 .wrapper {
     background: rgba(246, 246, 246, 1) ;
+}
+
+.button{
+    text-align: center;
+    padding: 10px 20px;
+    width: 130px;
+    height: 42px;
+    border: 1px solid #3C3C3C;
+    background: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: rgba(255, 255, 255, 1);
+    background: rgba(24, 181, 220, 1);
+    border: rgba(24, 181, 220, 1);
 }
 
 .who-we-are__main-heading {
@@ -49,8 +80,6 @@ header > * {
     line-height: 41px;
     text-align: center;
     letter-spacing: 0.13em;
-    margin-top: 150px;
-    margin-bottom: 64px;
     text-transform: uppercase;
 }
 
@@ -60,6 +89,9 @@ header > * {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
+    max-width: 570px;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 
@@ -96,6 +128,8 @@ header > * {
 .who-we-are__team-member {
     width: 270px;
     position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 a {
@@ -124,4 +158,35 @@ a {
     font-size: 18px;
     line-height: 22px;
     color: #646464;
+}
+
+.nav-list {
+    list-style: none;
+}
+.nav-list__item-link {
+    color: #000000;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+
+.nav-list__item-link:hover {
+    color: #18B5DC;
+}
+
+.d-flex__flex-direction--column {
+    flex-direction: column;
+}
+
+.social-list__item__default{
+    display: block;
+}
+.social-list__item__hover{
+    display: none;
+}
+.social-list__item:hover > .social-list__item__default {
+    display: none;
+}
+.social-list__item:hover > .social-list__item__hover {
+    display: block;
 }

@@ -8,24 +8,52 @@
     <link href="assets/css/main.css" rel="stylesheet">
 </head>
 <body>
-<header class="container header d-flex d-flex__justify--space-between">
-    <div>
-        <img alt="Logo" src="assets/images/logo.png">
+<header class="header">
+    <div class="container d-flex d-flex__align-items__center d-flex__justify--space-between">
+        <div>
+            <img alt="Logo" src="assets/images/logo.png">
+        </div>
+        <nav>
+            <ul class="nav-list d-flex">
+                <li class="nav-list__item">
+                    <a href="#home" class="nav-list__item-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#services" class="nav-list__item-link">
+                        Services
+                    </a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#information" class="nav-list__item-link">
+                        Information
+                    </a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#about" class="nav-list__item-link">
+                        About
+                    </a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#contacts" class="nav-list__item-link">
+                        Contacts
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <button class="button">
+            Callback
+        </button>
     </div>
-    <div>
-        <a href="">Home</a>
-        <a href="">services</a>
-        <a href="">About</a>
-        <a href="">contacts</a>
-    </div>
-    <a>
-        callback
-    </a>
 </header>
-<main>
-    <div class="wrapper container">
-        <div class="who-we-are">
+
+<main class="wrapper">
+    <div class="container">
+        <div class="who-we-are d-flex d-flex__align-items__center d-flex__flex-direction--column">
             <h1 class="who-we-are__main-heading">who we are</h1>
+            <div class="who-we-are__highlight">
+            </div>
             <p class="who-we-are__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua.</p>
             <div class="who-we-are__team d-flex">
@@ -133,8 +161,61 @@
         </div>
     </div>
 </main>
-<footer>
-
+<footer class="container header d-flex d-flex__flex-direction--column">
+    <div>
+        <img alt="Logo" src="assets/images/logo.png">
+    </div>
+    <nav>
+        <ul class="nav-list d-flex">
+            <li class="nav-list__item">
+                <a href="#home" class="nav-list__item-link">
+                    Home
+                </a>
+            </li>
+            <li class="nav-list__item">
+                <a href="#services" class="nav-list__item-link">
+                    Services
+                </a>
+            </li>
+            <li class="nav-list__item">
+                <a href="#information" class="nav-list__item-link">
+                    Information
+                </a>
+            </li>
+            <li class="nav-list__item">
+                <a href="#about" class="nav-list__item-link">
+                    About
+                </a>
+            </li>
+            <li class="nav-list__item">
+                <a href="#contacts" class="nav-list__item-link">
+                    Contacts
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="social-list d-flex">
+        <a class="social-list__item" href="#">
+            <img class="social-list__item__default" src="assets/images/twitter_white.png">
+            <img class="social-list__item__hover" src="assets/images/twitter.png">
+        </a>
+        <a class="social-list__item" href="#">
+            <img class="social-list__item__default" src="assets/images/facebook_white.png">
+            <img class="social-list__item__hover" src="assets/images/facebook.png">
+        </a>
+        <a class="social-list__item" href="#">
+            <img class="social-list__item__default" src="assets/images/instagram_white.png">
+            <img class="social-list__item__hover" src="assets/images/instagram.png">
+        </a>
+        <a class="social-list__item" href="#">
+            <img class="social-list__item__default" src="assets/images/linkedin_white.png">
+            <img class="social-list__item__hover" src="assets/images/linkedin.png">
+        </a>
+        <a class="social-list__item" href="#">
+            <img class="social-list__item__default" src="assets/images/telegram_white.png">
+            <img class="social-list__item__hover" src="assets/images/telegram.png">
+        </a>
+    </div>
 </footer>
 </body>
 </html>
