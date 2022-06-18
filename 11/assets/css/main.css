@@ -188,22 +188,26 @@ a {
     flex-direction: column;
 }
 
-.social-list__item__default {
+.social-list__item__default, .who-we-are__social__image-front {
     display: block;
 }
 
-.social-list__item__hover {
+.social-list__item__hover, .who-we-are__social__image-back {
     display: none;
 }
 
-.social-list__item:hover > .social-list__item__default {
+.social-list__item:hover > .social-list__item__default, .who-we-are__social-link:hover > .who-we-are__social__image-front {
     display: none;
 }
 
-.social-list__item:hover > .social-list__item__hover {
+.social-list__item:hover > .social-list__item__hover, .who-we-are__social-link:hover > .who-we-are__social__image-back  {
     display: block;
 }
 
 .social-list__item{
     margin: 28px 5px 40px;
+}
+
+.who-we-a {
+
 }
