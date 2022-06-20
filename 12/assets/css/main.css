@@ -1,0 +1,154 @@
+:before,
+:after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.d-flex {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    perspective: 1000px;
+    border-radius: 5px;
+}
+
+.card--inner {
+    position: relative;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card--inner {
+    transform: rotateY(180deg);
+}
+
+.card--front, .card--back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: #efceb5;
+}
+
+.card--front {
+    border: 1px solid #af5050;
+}
+
+.card {
+    background-color: transparent;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.card--inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card--inner > * {
+    border-radius: 10px;
+    border: 1px solid #af5050;
+
+}
+
+
+.card:hover .card--inner {
+    transform: rotateY(180deg);
+}
+
+
+.card--front, .card--back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card--back {
+    padding: 15px;
+
+}
+
+.card--front {
+    padding: 15px;
+}
+
+.card--back {
+    transform: rotateY(180deg);
+}
+
+.d-flex__flex-direction--column {
+    flex-direction: column;
+}
+
+.card--back-top, .card--back-bottom {
+    height: 20%;
+    position: relative;
+    width: 100%;
+}
+
+.card--back-middle {
+    height: 60%;
+}
+
+.card--red {
+    color: #FF0000FF;
+}
+
+.card--symbol {
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+.card--back-top {
+    text-align: left;
+}
+
+.card--back-top_symbol-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card--back-bottom_symbol-content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.d-flex__align-items__center {
+    align-items: center;
+}
+
+.symbol--margin {
+    margin-left: 2px;
+}
+
+.background {
+    background: url("../images/poker.jpeg");
+}
+
