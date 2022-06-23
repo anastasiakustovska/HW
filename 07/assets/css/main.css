@@ -78,6 +78,7 @@ h2 {
 #sign_in {
     margin-right: 32px;
 }
+
 .container {
     width: 80%;
     margin: auto;
@@ -153,6 +154,10 @@ h3 {
     margin-bottom: 36px;
 }
 
+.form h3 {
+    margin-bottom: 25px;
+}
+
 .icons > div {
     width: 270px;
 }
@@ -171,7 +176,7 @@ h3 {
     margin-top: 100px;
     background-image: url('../images/feature_bg.png');
     background-size: cover;
-    padding-bottom: 75px;
+    padding-bottom: 95px;
     min-height: 390px;
 }
 
@@ -186,7 +191,7 @@ h3 {
 }
 
 .sign_up_now {
-    margin-top: 70px;
+    margin-top: 83px;
     font-weight: 700;
 }
 
@@ -245,7 +250,7 @@ footer .links_list > a:last-child {
 footer {
     padding-bottom: 72px;
     padding-top: 70px;
-    border-top: 1px solid rgba(188, 208, 229, 0.496913);;
+    border-top: 1px solid rgba(188, 208, 229, 0.496913);
     margin-top: 100px;
 }
 
@@ -255,4 +260,10 @@ footer .form {
 
 #footer_logo {
     margin-top: 15px;
+}
+
+input[type="text"] {
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
