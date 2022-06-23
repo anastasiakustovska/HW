@@ -127,6 +127,10 @@ h1 {
     margin-bottom: 30px;
 }
 
+.service-item:hover > .service-item--icon{
+    border: 1px solid rgba(61, 179, 112, 0.1);
+}
+
 .service-item--icon > * {
     margin: auto;
 }
