@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .bread_crumbs > span {
     text-transform: uppercase;
     font-weight: bold;
@@ -42,9 +46,8 @@ a {
 }
 
 .container {
-    width: 90%;
+    max-width: 1170px;
     margin: auto;
-    padding-top: 16px;
     padding-bottom: 16px;
 }
 
@@ -55,6 +58,7 @@ header {
     position: -webkit-sticky;
     top: 0;
     background: #FFFFFF;
+    padding-top: 16px;
 }
 
 #logo {
@@ -64,7 +68,7 @@ header {
 }
 
 article {
-    margin-bottom: 70px;
+    padding-top: 70px;
 }
 
 h2 {
@@ -119,7 +123,7 @@ body {
 .sidebar {
     position: -webkit-sticky;
     position: sticky;
-    top: 80px;
+    top: 40px;
     width: 150%;
     height: 25vh;
     display: flex;
@@ -128,8 +132,8 @@ body {
 
 .sidebar > div {
     margin-top: 80px;
-    border-bottom: 1px solid black;
-
+    border-bottom: 1px solid rgba(189, 189, 189, 1);
+    padding-bottom: 10px;
 }
 
 .sidebar a {
@@ -146,7 +150,7 @@ body {
     margin-left: 40px;
 }
 
-.text_info > .highlight {
+.text_info .highlight_extra, .text_info .highlight {
     width: 100px;
     height: 8px;
     background: #000000;
@@ -228,4 +232,8 @@ body {
 
 .page_2 {
     font-family: 'Staatliches', cursive
+}
+
+.highlight_wrapper {
+    vertical-align: middle;
 }
