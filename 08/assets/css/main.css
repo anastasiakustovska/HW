@@ -62,6 +62,10 @@ input[type="checkbox"]:checked + label {
     color: #9B96AC;
 }
 
+label {
+    width: calc(100% - 36px);
+}
+
 .list_item:nth-child(2n) {
     background: #7A7593;
 }
@@ -90,6 +94,11 @@ button {
     cursor: pointer;
     font-size: 18px;
 }
+
 button:after {
     content: ':)';
+}
+
+button:active {
+    color: #efa3a1;
 }
