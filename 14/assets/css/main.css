@@ -19,11 +19,6 @@ span, p, a {
     flex-wrap: wrap;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-}
-
 .d-flex__align-items--center {
     align-items: center;
 }
@@ -34,6 +29,7 @@ span, p, a {
 
 .header {
     height: 100px;
+    padding: 0 135px;
 }
 
 .header-logo {
@@ -116,7 +112,7 @@ ul.nav-list {
 .featured--article {
     width: 100%;
     max-height: 470px;
-    margin: 25px 0;
+    margin: 50px 0;
 }
 
 .featured--article-image {
@@ -215,6 +211,7 @@ ul.nav-list {
 .load-more-wrapper {
     margin-top: 64px;
     width: 100%;
+    margin-bottom: 70px;
 }
 
 .info-text-container {
@@ -318,4 +315,133 @@ ul.nav-list {
 }
 .nav {
     margin-right: 84px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.text-link {
+    display: initial;
+}
+
+.desktop-only {
+    display: block;
+}
+
+.desktop-hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 1439px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .main {
+        padding-bottom: 0;
+    }
+
+    .desktop-hidden {
+        display: block;
+    }
+
+    .menu--hamburger {
+        margin-left: 40px;
+        width: 34px;
+        height: 20px;
+
+    }
+
+    .container {
+        margin: auto;
+        width: 700px;
+    }
+
+    .featured--article-image {
+        width: 340px;
+        height: 280px;
+    }
+
+    .featured--article-text {
+        width: calc(100% - 340px);
+        padding: 0 30px;
+    }
+
+    .article--date{
+        margin-bottom: 15px;
+    }
+
+    .header {
+        height: 60px;
+        padding: 0 35px;
+    }
+
+    .background--text {
+        top: 90px;
+        left: 34px;
+        max-width: 700px;
+        z-index: 1;
+    }
+
+    .last-post, .popular-post {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .last-post--text {
+        padding-left: 20px;
+    }
+
+    .last-post:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+
+    .last-post:nth-of-type(even) .last-post--text {
+        padding-left: 0;
+        padding-right: 20px;
+    }
+
+    .last-post-image {
+        width: 340px;
+        height: 240px;
+    }
+
+    .popular-post {
+        display: flex;
+        flex-direction: column;
+        max-width: 340px;
+    }
+
+    .info-text-container {
+        text-align: right;
+    }
+
+    #info {
+        width: 100%;
+        justify-content: end;
+    }
+
+    .position--title {
+        width: 100%;
+    }
+    .footer{
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .social--list {
+        justify-content: center;
+        margin-bottom: 40px;
+        margin-top: 51px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container {
+        margin: auto;
+        width: 300px;
+    }
 }
