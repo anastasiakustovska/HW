@@ -296,7 +296,7 @@ ul.nav-list {
 }
 
 .nav-list--item {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -313,6 +313,7 @@ ul.nav-list {
     display: none;
     margin: auto;
 }
+
 .nav {
     margin-right: 84px;
 }
@@ -334,6 +335,19 @@ img {
     display: none;
 }
 
+.mobile-only {
+    display: none;
+}
+
+.section--heading {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+/* Tablets */
 @media only screen and (max-width: 1439px) {
     .desktop-only {
         display: none;
@@ -351,7 +365,6 @@ img {
         margin-left: 40px;
         width: 34px;
         height: 20px;
-
     }
 
     .container {
@@ -369,7 +382,7 @@ img {
         padding: 0 30px;
     }
 
-    .article--date{
+    .article--date {
         margin-bottom: 15px;
     }
 
@@ -395,15 +408,6 @@ img {
         padding-left: 20px;
     }
 
-    .last-post:nth-of-type(even) {
-        flex-direction: row-reverse;
-    }
-
-    .last-post:nth-of-type(even) .last-post--text {
-        padding-left: 0;
-        padding-right: 20px;
-    }
-
     .last-post-image {
         width: 340px;
         height: 240px;
@@ -427,7 +431,8 @@ img {
     .position--title {
         width: 100%;
     }
-    .footer{
+
+    .footer {
         text-align: center;
         flex-direction: column;
     }
@@ -439,9 +444,151 @@ img {
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 1439px) and (min-width: 768px) {
+    .last-post:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+
+    .last-post:nth-of-type(even) .last-post--text {
+        padding-left: 0;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header {
+        height: 60px;
+        padding: 0 35px;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .background {
+        width: 100vw;
+    }
+
     .container {
-        margin: auto;
-        width: 300px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .featured--article {
+        width: 100%;
+        margin: 50px 0;
+        display: flex;
+        flex-direction: column;
+        max-height: initial;
+    }
+
+    .featured--article-image {
+        height: 250px;
+        width: 100%;
+    }
+
+    .featured--article-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .menu--hamburger {
+        margin-left: 20px;
+        width: 34px;
+        height: 20px;
+    }
+
+    .last-post {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .background {
+        height: 500px;
+        width: 100%;
+    }
+
+    .background--text {
+        max-width: 300px;
+    }
+
+    .main--text {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 50px;
+        letter-spacing: 0.05em;
+    }
+
+    .last-post {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .last-post--text {
+        max-width: 100%;
+    }
+
+    .last-post-image {
+        width: 100%;
+        height: initial;
+    }
+
+    .popular-post {
+        max-width: 100%;
+    }
+
+    .info-text-container {
+        text-align: left;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+
+    }
+
+    .footer {
+        padding: 0 10px;
+    }
+
+    .section-info {
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .last-post--text {
+        padding: 0;
+    }
+
+    .main--title {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    .section-info-link {
+        margin-top: 10px;
+    }
+
+    .post--info {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .footer-title {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 42px;
+        letter-spacing: 0.05em;
+        color: #000000;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .copyright-info {
+        margin-bottom: 50px;
     }
 }
