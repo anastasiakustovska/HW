@@ -98,8 +98,7 @@ ul.nav-list {
 }
 
 .container {
-    margin: auto;
-    width: 1170px;
+    margin: 0 135px;
 }
 
 .section-title {
@@ -189,8 +188,16 @@ ul.nav-list {
     width: 570px;
 }
 
+.i {
+    width: 20px;
+    height: 20px;
+}
+
+.search-icon {
+    margin-top: 10px;
+}
+
 .btn {
-    display: block;
     padding: 10px 45px;
     text-align: center;
     vertical-align: middle;
@@ -204,6 +211,8 @@ ul.nav-list {
 .btn-dark {
     background: #565656;
     color: #FFFFFF;
+    transition-property: background;
+    transition-duration: 0.5s;
 }
 
 .load-more-wrapper {
@@ -353,8 +362,24 @@ img {
     margin-top: 20px;
 }
 
+.section-info-link:hover {
+    color: #000000;
+    fill: #000000;
+    transition-property: color, fill;
+    transition-duration: 0.5s;
+}
+
+path {
+    transition-property: fill;
+    transition-duration: 0.5s;
+}
+
+.section-info-link:hover path {
+    fill: #000000;
+}
+
 /* Tablets */
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1024px) {
     .desktop-only {
         display: none;
     }
@@ -465,14 +490,18 @@ img {
         flex-direction: column;
     }
 
-    .social--list {
+        .social--list {
         justify-content: center;
         margin-bottom: 40px;
         margin-top: 51px;
     }
 }
 
-@media screen and (max-width: 1439px) and (min-width: 768px) {
+.btn-dark:hover {
+    background: #323232;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 580px) {
     .last-post:nth-of-type(even) {
         flex-direction: row-reverse;
     }
@@ -484,7 +513,7 @@ img {
 
 
 /* Mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 580px) {
     .header {
         height: 60px;
         padding: 0 35px;
@@ -526,6 +555,7 @@ img {
     .featured--article-text {
         width: 100%;
         padding: 0;
+        margin-bottom: 37px;
     }
 
     .last-post--text {
@@ -640,5 +670,14 @@ img {
 
     .copyright-info {
         margin-bottom: 50px;
+    }
+    .article--text-category{
+        margin-bottom: 30px;
+    }
+    .article--title{
+        margin-bottom: 10px;
+    }
+    .article--date{
+        margin-bottom: 40px;
     }
 }
