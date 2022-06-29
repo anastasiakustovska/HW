@@ -1,0 +1,9 @@
+@mixin transition($duration, $properties...) {
+  transition-property: $properties;
+  transition-duration: $duration;
+}
+@mixin round ($height){
+ height: $height;
+  width: $height;
+  border-radius: 50%;
+}

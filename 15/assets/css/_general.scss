@@ -1,0 +1,33 @@
+.d-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.d-flex__flex-direction--column {
+  flex-direction: column;
+}
+
+.d-flex__justify--center{
+  justify-content: center;
+}
+
+.d-flex__align-items--center {
+  align-items: center;
+}
+
+.d-block{
+  display: block;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+.d-flex__justify--space-between {
+  justify-content: space-between;
+}
+.d-flex__justify--space-around {
+  justify-content: space-around;
+}
+
+.w-50 {
+  width: 50%;
+}

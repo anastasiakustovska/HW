@@ -1,0 +1,60 @@
+.heading{
+  &--subtitle{
+    @extend .text-uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: $colorLightGrey;
+
+  } &--title{
+    @extend .text-uppercase;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 66px;
+        color: $colorPrimary;
+  }
+}
+.team-member{
+  &--name{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: capitalize;
+    color: $colorDarkGrey;
+  }
+  &--job{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: $colorDarkGrey;
+  }
+  &--link{
+    border: 2px solid $colorLightGrey1;
+    @include transition(1s, border);
+    @include round(30px);
+    margin: 0 2.5px;
+
+    path {
+      @include transition(1s, fill);
+    }
+
+    &:hover{
+      border: 2px solid $colorPrimary;
+
+      path {
+        fill: $colorPrimary;
+      }
+    }
+  }
+  &--description{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 430px;
+    padding: 0 25px;
+  }
+}

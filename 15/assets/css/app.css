@@ -1,0 +1,107 @@
+:before,
+:after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-flex__flex-direction--column {
+  flex-direction: column;
+}
+
+.d-flex__justify--center {
+  justify-content: center;
+}
+
+.d-flex__align-items--center {
+  align-items: center;
+}
+
+.d-block {
+  display: block;
+}
+
+.text-uppercase, .heading--title, .heading--subtitle {
+  text-transform: uppercase;
+}
+
+.d-flex__justify--space-between {
+  justify-content: space-between;
+}
+
+.d-flex__justify--space-around {
+  justify-content: space-around;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.heading--subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #898F8F;
+}
+.heading--title {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 66px;
+  color: #FFCC00;
+}
+
+.team-member--name {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: capitalize;
+  color: #666666;
+}
+.team-member--job {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: #666666;
+}
+.team-member--link {
+  border: 2px solid #CCCCCC;
+  transition-property: border;
+  transition-duration: 1s;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 0 2.5px;
+}
+.team-member--link path {
+  transition-property: fill;
+  transition-duration: 1s;
+}
+.team-member--link:hover {
+  border: 2px solid #FFCC00;
+}
+.team-member--link:hover path {
+  fill: #FFCC00;
+}
+.team-member--description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 430px;
+  padding: 0 25px;
+}
+
+/*# sourceMappingURL=app.css.map */
