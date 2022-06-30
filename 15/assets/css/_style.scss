@@ -12,9 +12,67 @@
         font-size: 60px;
         line-height: 66px;
         color: $colorPrimary;
+        margin: 15px auto 40px;
   }
 }
 .team-member{
+  margin-top: 115px;
+
+  &--image-wrapper {
+    padding: 15px;
+    position:relative;
+
+    &:before {
+      top:0;
+      left:0;
+      border-width: 1px 0 0 1px
+    }
+
+    & > :first-child:before {
+      bottom:0;
+      right:0;
+      border-width: 0 1px 1px 0;
+    }
+
+    &:before, &:after, &>:first-child:before, &>:first-child:after {
+      position:absolute;
+      width:100px;
+      height: 100px;
+      border-color: $colorPrimary;
+      border-style:solid;
+      content: ' ';
+    }
+
+    &:after {
+      top:0;
+      right:0;
+      border-width: 1px 1px 0 0
+    }
+    &>:first-child:before {
+      bottom:0;
+      right:0;
+      border-width: 0 1px 1px 0
+    }
+    &>:first-child:after {
+      bottom:0;
+      left:0;
+      border-width: 0 0 1px 1px
+    }
+  }
+
+  &--button {
+    text-transform: uppercase;
+    color: $colorDarkGrey;
+    border: 1px solid $colorPrimary;
+    margin-top: 25px;
+    @include transition(1s, background);
+
+    &:hover {
+        background: $colorPrimary;
+    }
+  }
+
+
   &--name{
     font-style: normal;
     font-weight: 900;
@@ -22,7 +80,9 @@
     line-height: 42px;
     text-transform: capitalize;
     color: $colorDarkGrey;
+    margin-bottom: 30px;
   }
+
   &--job{
     font-style: normal;
     font-weight: 400;
@@ -30,7 +90,9 @@
     line-height: 36px;
     text-transform: capitalize;
     color: $colorDarkGrey;
+    margin-bottom: 30px;
   }
+
   &--link{
     border: 2px solid $colorLightGrey1;
     @include transition(1s, border);
@@ -49,6 +111,7 @@
       }
     }
   }
+
   &--description{
     font-weight: 500;
     font-size: 14px;
@@ -56,5 +119,61 @@
     text-align: center;
     max-width: 430px;
     padding: 0 25px;
+    margin-bottom: 20px;
   }
 }
+.btn {
+  padding: 10px 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+.border-line{
+  height: 0.25px;
+
+  &--vertical {
+    width: 1px;
+    background: $colorPrimary;
+    height: 550px;
+    top: 300px;
+    position: absolute;
+  }
+
+  &--small{
+    width: 100px;
+    border-top: 1px solid $colorPrimary;
+    margin-bottom: 30px;
+  }
+
+  &--big{
+    width: 210px;
+    border-top: 1px solid $colorPrimary;
+  }
+  &-medium{
+    width: 210px;
+    border-top: 1px solid $colorPrimary;
+  }
+}
+
+.social-links {
+  margin-bottom: 50px;
+}
+
+.line{
+  margin-top: 20px;
+  height: 4px;
+
+  &-left--short{
+    width: 10px;
+    border: 2px solid $colorPrimary;
+    margin: 5px;
+  }
+  &-left--long{
+    width: 20px;
+    border: 2px solid $colorPrimary;
+    margin: 5px;
+
+  }
+}
+

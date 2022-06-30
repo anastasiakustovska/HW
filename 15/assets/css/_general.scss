@@ -21,13 +21,25 @@
 .text-uppercase {
   text-transform: uppercase;
 }
+
 .d-flex__justify--space-between {
   justify-content: space-between;
 }
+
 .d-flex__justify--space-around {
   justify-content: space-around;
 }
 
 .w-50 {
   width: 50%;
+}
+
+.main-container {
+  max-width: 1170px;
+  padding: 120px 0;
+  margin: auto;
+}
+
+.absolute {
+  position: absolute;
 }
