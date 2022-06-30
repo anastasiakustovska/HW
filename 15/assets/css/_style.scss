@@ -1,62 +1,75 @@
-.heading{
-  &--subtitle{
+.heading {
+  &--subtitle {
     @extend .text-uppercase;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     color: $colorLightGrey;
 
-  } &--title{
+  }
+
+  &--title {
     @extend .text-uppercase;
-        font-weight: 900;
-        font-size: 60px;
-        line-height: 66px;
-        color: $colorPrimary;
-        margin: 15px auto 40px;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 66px;
+    color: $colorPrimary;
+    margin: 15px auto 40px;
+    font-family: 'Roboto', sans-serif;
   }
 }
-.team-member{
+
+.team-member {
   margin-top: 115px;
 
-  &--image-wrapper {
-    padding: 15px;
-    position:relative;
-
-    &:before {
-      top:0;
-      left:0;
-      border-width: 1px 0 0 1px
+  &--image {
+    > img {
+      max-width: 100%;
     }
 
-    & > :first-child:before {
-      bottom:0;
-      right:0;
-      border-width: 0 1px 1px 0;
-    }
+    &-wrapper {
+      padding: 15px;
+      position: relative;
+      height: fit-content;
 
-    &:before, &:after, &>:first-child:before, &>:first-child:after {
-      position:absolute;
-      width:100px;
-      height: 100px;
-      border-color: $colorPrimary;
-      border-style:solid;
-      content: ' ';
-    }
+      &:before {
+        top: 0;
+        left: 0;
+        border-width: 1px 0 0 1px
+      }
 
-    &:after {
-      top:0;
-      right:0;
-      border-width: 1px 1px 0 0
-    }
-    &>:first-child:before {
-      bottom:0;
-      right:0;
-      border-width: 0 1px 1px 0
-    }
-    &>:first-child:after {
-      bottom:0;
-      left:0;
-      border-width: 0 0 1px 1px
+      & > :first-child:before {
+        bottom: 0;
+        right: 0;
+        border-width: 0 1px 1px 0;
+      }
+
+      &:before, &:after, & > :first-child:before, & > :first-child:after {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-color: $colorPrimary;
+        border-style: solid;
+        content: ' ';
+      }
+
+      &:after {
+        top: 0;
+        right: 0;
+        border-width: 1px 1px 0 0
+      }
+
+      & > :first-child:before {
+        bottom: 0;
+        right: 0;
+        border-width: 0 1px 1px 0
+      }
+
+      & > :first-child:after {
+        bottom: 0;
+        left: 0;
+        border-width: 0 0 1px 1px
+      }
     }
   }
 
@@ -66,14 +79,14 @@
     border: 1px solid $colorPrimary;
     margin-top: 25px;
     @include transition(1s, background);
+    font-family: 'Open Sans', sans-serif;
 
     &:hover {
-        background: $colorPrimary;
+      background: $colorPrimary;
     }
   }
 
-
-  &--name{
+  &--name {
     font-style: normal;
     font-weight: 900;
     font-size: 36px;
@@ -81,9 +94,12 @@
     text-transform: capitalize;
     color: $colorDarkGrey;
     margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
   }
 
-  &--job{
+  &--job {
+    text-align: center;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -93,7 +109,7 @@
     margin-bottom: 30px;
   }
 
-  &--link{
+  &--link {
     border: 2px solid $colorLightGrey1;
     @include transition(1s, border);
     @include round(30px);
@@ -103,7 +119,7 @@
       @include transition(1s, fill);
     }
 
-    &:hover{
+    &:hover {
       border: 2px solid $colorPrimary;
 
       path {
@@ -112,7 +128,7 @@
     }
   }
 
-  &--description{
+  &--description {
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
@@ -122,6 +138,7 @@
     margin-bottom: 20px;
   }
 }
+
 .btn {
   padding: 10px 5px;
   font-weight: 700;
@@ -129,28 +146,41 @@
   line-height: 14px;
   text-align: center;
 }
-.border-line{
+
+.border-line {
   height: 0.25px;
 
   &--vertical {
+    display: none;
+
+    @include minWidth(1024px) {
+      display: block;
+    }
+
     width: 1px;
     background: $colorPrimary;
-    height: 550px;
+    height: 600px;
     top: 300px;
     position: absolute;
   }
 
-  &--small{
+  &--small {
     width: 100px;
     border-top: 1px solid $colorPrimary;
     margin-bottom: 30px;
   }
 
-  &--big{
-    width: 210px;
+  &--big {
+    width: 20vw;
+
+    @include minWidth(768px) {
+      width: 210px;
+    }
+
     border-top: 1px solid $colorPrimary;
   }
-  &-medium{
+
+  &-medium {
     width: 210px;
     border-top: 1px solid $colorPrimary;
   }
@@ -160,16 +190,17 @@
   margin-bottom: 50px;
 }
 
-.line{
+.line {
   margin-top: 20px;
   height: 4px;
 
-  &-left--short{
+  &-left--short {
     width: 10px;
     border: 2px solid $colorPrimary;
     margin: 5px;
   }
-  &-left--long{
+
+  &-left--long {
     width: 20px;
     border: 2px solid $colorPrimary;
     margin: 5px;

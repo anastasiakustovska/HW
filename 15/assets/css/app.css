@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
@@ -21,6 +22,11 @@ a {
 
 .d-flex__justify--center {
   justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .d-flex__justify--center--tablet {
+    justify-content: center !important;
+  }
 }
 
 .d-flex__align-items--center {
@@ -47,9 +53,9 @@ a {
   width: 50%;
 }
 
-.main-container {
+.container {
   max-width: 1170px;
-  padding: 120px 0;
+  padding: 120px 10px;
   margin: auto;
 }
 
@@ -69,14 +75,19 @@ a {
   line-height: 66px;
   color: #FFCC00;
   margin: 15px auto 40px;
+  font-family: "Roboto", sans-serif;
 }
 
 .team-member {
   margin-top: 115px;
 }
+.team-member--image > img {
+  max-width: 100%;
+}
 .team-member--image-wrapper {
   padding: 15px;
   position: relative;
+  height: fit-content;
 }
 .team-member--image-wrapper:before {
   top: 0;
@@ -118,6 +129,7 @@ a {
   margin-top: 25px;
   transition-property: background;
   transition-duration: 1s;
+  font-family: "Open Sans", sans-serif;
 }
 .team-member--button:hover {
   background: #FFCC00;
@@ -130,8 +142,11 @@ a {
   text-transform: capitalize;
   color: #666666;
   margin-bottom: 30px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 .team-member--job {
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -181,11 +196,17 @@ a {
   height: 0.25px;
 }
 .border-line--vertical {
+  display: none;
   width: 1px;
   background: #FFCC00;
-  height: 550px;
+  height: 600px;
   top: 300px;
   position: absolute;
+}
+@media screen and (min-width: 1024px) {
+  .border-line--vertical {
+    display: block;
+  }
 }
 .border-line--small {
   width: 100px;
@@ -193,8 +214,13 @@ a {
   margin-bottom: 30px;
 }
 .border-line--big {
-  width: 210px;
+  width: 20vw;
   border-top: 1px solid #FFCC00;
+}
+@media screen and (min-width: 768px) {
+  .border-line--big {
+    width: 210px;
+  }
 }
 .border-line-medium {
   width: 210px;
