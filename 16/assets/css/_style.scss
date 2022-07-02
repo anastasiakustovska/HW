@@ -1,0 +1,185 @@
+.header {
+  height: 100px;
+
+  @include maxWidth($breakpointTablet) {
+    height: 60px;
+  }
+
+
+  &--logo {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.5em;
+    color: $colorBlack;
+    text-transform: uppercase;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+}
+
+.footer {
+  padding: 70px 135px 30px;
+  background: $colorLightGrey;
+
+  @include maxWidth($breakpointMobile) {
+    padding: 0 10px;
+  }
+
+  &--title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+
+    @include maxWidth($breakpointMobile) {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 42px;
+      letter-spacing: 0.05em;
+      color: $colorBlack;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &--contacts-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+
+    @include maxWidth($breakpointTablet) {
+      text-align: center;
+    }
+  }
+}
+
+.main {
+  &-info--text{
+    max-width: 50%;
+  }
+  &--heading {
+    @include maxWidth($breakpointTablet) {
+      margin-top: 68px;
+    }
+  }
+}
+
+.social {
+  &--list {
+    justify-content: center;
+    margin-bottom: 40px;
+
+    @include maxWidth($breakpointTablet) {
+      margin-top: 40px;
+    }
+  }
+
+  &--link {
+    margin: 0 12px;
+
+    &:hover {
+      background: #565656;
+
+      & path {
+        fill: #FFFFFF;
+      }
+    }
+  }
+}
+
+.article {
+  &--picture {
+    width: 100%;
+
+    &-item, img {
+      width: 100%;
+    }
+  }
+
+  &--subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+    font-family: 'Red Hat Display', sans-serif;
+
+    @include maxWidth($breakpointMobile) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &--title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    margin-bottom: 60px;
+    font-family: 'Red Hat Display', sans-serif;
+
+    @include maxWidth($breakpointMobile) {
+      margin-bottom: 70px;
+    }
+
+  }
+
+  &-info--text {
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: $colorGrey;
+    margin-bottom: 90px;
+
+    &-item {
+      margin: 20px 0;
+
+      @include maxWidth($breakpointMobile) {
+        margin-bottom: 70px;
+      }
+    }
+  }
+
+  &--picture {
+    margin-bottom: 90px;
+
+    @include maxWidth($breakpointMobile) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.copyright-info {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+
+  @include maxWidth($breakpointTablet) {
+    margin: 40px 0 50px;
+  }
+}
+
+.btn {
+  padding: 10px 45px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  border: 1px solid $colorGrey;
+  @include transition(0.5s, background, border);
+
+  &-square {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+  }
+}

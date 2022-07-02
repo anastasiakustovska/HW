@@ -1,0 +1,16 @@
+@mixin maxWidth($width) {
+  @media screen and(max-width: $width) {
+    @content;
+  }
+}
+
+@mixin minWidth($width) {
+  @media screen and(min-width: $width) {
+    @content;
+  }
+}
+
+@mixin transition($duration, $properties...) {
+  transition-property: $properties;
+  transition-duration: $duration;
+}
