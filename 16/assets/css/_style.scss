@@ -57,9 +57,10 @@
 }
 
 .main {
-  &-info--text{
+  &-info--text {
     max-width: 50%;
   }
+
   &--heading {
     @include maxWidth($breakpointTablet) {
       margin-top: 68px;
