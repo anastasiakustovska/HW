@@ -8,6 +8,28 @@
   width: 100%;
   flex: 1;
   margin-left: 25px;
+
+  &--icon {
+    margin: 0 10px;
+  }
+
+  &--link {
+    display: flex;
+  }
+
+  &--language {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $colorGrayDark;
+    margin-left: 10px;
+    margin-right: 60px;
+  }
+
+  &--avatar {
+    @include round(36px);
+  }
 }
 
 .navbar {
@@ -58,14 +80,25 @@
     margin-left: auto;
   }
 
+  &--icon-logo {
+    margin: 0 25px 58px;
+  }
+
   &--icon-opened {
     display: none;
   }
 
   &--toggle {
+    background: $colorWhite;
+    @include round();
     position: absolute;
     top: 35px;
     right: -10px;
+  }
+
+  &--section-start {
+    margin-top: 30px;
+    padding-bottom: 28px;
   }
 
   @include transition(0.5s, width)
@@ -74,14 +107,27 @@
 #toggle:checked + .sidebar {
   width: 220px;
 
+  .badge {
+    right: -11px;
+    top: -10px;
+  }
+
   .sidebar {
     &--text {
       font-size: 18px;
     }
 
+    &--toggle {
+      right: 20px;
+    }
+
     &--icon {
       position: relative;
       margin: 0 15px 0 20px;
+
+      &-logo {
+        margin-left: 0;
+      }
     }
 
     &--delimiter {
@@ -89,7 +135,7 @@
     }
   }
 
-  .nav--list-item > a[class="d-flex"] {
+  .nav--list-item a {
     justify-content: start;
   }
 
@@ -108,18 +154,29 @@
 .nav {
   width: 100%;
 
+  &--section-title {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $colorGrayLight;
+    margin-left: 15px;
+  }
+
   &--list {
     &-item {
       position: relative;
       width: 100%;
       padding: 10px 0;
+      height: 46px;
 
-      > a[class="d-flex"] {
+      > a {
         justify-content: center;
       }
 
       &:hover {
         background: $colorPurpleLight;
+        box-shadow: 0 0 20px rgba(158, 140, 252, 0.7);
 
         .sidebar--text {
           color: $colorWhite;
@@ -138,9 +195,6 @@
 
 .badge {
   position: absolute;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
   top: 0;
   right: 18px;
   text-align: center;
@@ -150,6 +204,7 @@
   line-height: 15px;
   vertical-align: middle;
   padding-top: 3px;
+  @include round();
 
   &--green {
     background: $colorGreen;
@@ -168,4 +223,13 @@
 
 .icon:hover path {
   fill: $colorPurpleLight;
+}
+
+.online {
+  position: absolute;
+  background: $colorGreen;
+  border: 1px solid $colorWhite;
+  bottom: 0;
+  right: 0;
+  @include round(10px);
 }
