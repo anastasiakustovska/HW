@@ -1,0 +1,171 @@
+.header {
+  margin-top: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  height: 80px;
+  padding: 0 30px;
+  background: $colorWhite;
+  width: 100%;
+  flex: 1;
+  margin-left: 25px;
+}
+
+.navbar {
+  &--toggle {
+    display: none;
+  }
+}
+
+.sidebar {
+  width: 86px;
+  background: $colorWhite;
+  height: fit-content;
+  top: 0;
+
+  &--delimiter {
+    &-long {
+      margin: 0 5px;
+      width: 13px;
+      height: 4px;
+      background-color: #9E8CFC;
+      border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px;
+    }
+
+    &-short {
+      width: 8px;
+      height: 4px;
+      background-color: #9E8CFC;
+      border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px;
+    }
+  }
+
+  &--text {
+    transition: all 0.5s ease;
+    font-size: 0;
+    color: $colorGrayDark;
+  }
+
+  &--content {
+    padding-top: 30px;
+    margin-left: auto;
+  }
+
+  &--icon-opened {
+    display: none;
+  }
+
+  &--toggle {
+    position: absolute;
+    top: 35px;
+    right: -10px;
+  }
+
+  @include transition(0.5s, width)
+}
+
+#toggle:checked + .sidebar {
+  width: 220px;
+
+  .sidebar {
+    &--text {
+      font-size: 18px;
+    }
+
+    &--icon {
+      position: relative;
+      margin: 0 15px 0 20px;
+    }
+
+    &--delimiter {
+      display: none;
+    }
+  }
+
+  .nav--list-item > a[class="d-flex"] {
+    justify-content: start;
+  }
+
+
+  .sidebar--icon-closed {
+    display: block;
+    @include transition(0.5s, all);
+    transform: rotate(180deg);
+  }
+}
+
+.main {
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+
+  &--list {
+    &-item {
+      position: relative;
+      width: 100%;
+      padding: 10px 0;
+
+      > a[class="d-flex"] {
+        justify-content: center;
+      }
+
+      &:hover {
+        background: $colorPurpleLight;
+
+        .sidebar--text {
+          color: $colorWhite;
+        }
+
+        path {
+          fill: $colorWhite;
+        }
+      }
+    }
+  }
+}
+
+.a {
+}
+
+.badge {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  top: 0;
+  right: 18px;
+  text-align: center;
+  color: $colorWhite;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  vertical-align: middle;
+  padding-top: 3px;
+
+  &--green {
+    background: $colorGreen;
+    color: $colorGrayDark;
+  }
+
+  &--red {
+    background: $colorRed;
+  }
+
+  &--yellow {
+    background: $colorYellow;
+    color: $colorGrayDark;
+  }
+}
+
+.icon:hover path {
+  fill: $colorPurpleLight;
+}
