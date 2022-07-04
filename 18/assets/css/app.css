@@ -1,0 +1,265 @@
+body {
+  background: #9789F9;
+}
+
+@font-face {
+  font-family: "bebas_neuethin";
+  src: url("../fonts/bebas_neue/bebas_neue_thin-webfont.woff2") format("woff2"), url("../fonts/bebas_neue/bebas_neue_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+:before,
+:after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "bebas_neuethin", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-flex__flex-direction--column {
+  flex-direction: column;
+}
+
+.d-flex__justify--center {
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .d-flex__justify--center-tablet {
+    justify-content: center !important;
+  }
+}
+
+.p-relative {
+  position: relative;
+}
+
+.d-flex__align-items--center {
+  align-items: center;
+}
+
+.d-block {
+  display: block;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.d-flex__justify--space-between {
+  justify-content: space-between;
+}
+
+.d-flex__justify--space-around {
+  justify-content: space-around;
+}
+
+.w-50 {
+  width: 50%;
+}
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.card {
+  background: #F5F3F9;
+  width: 370px;
+  height: 611px;
+  margin: 15px 15px;
+  position: relative;
+}
+.card--selected {
+  width: 400px;
+  height: 675px;
+}
+.card--selected-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.card--selected-badge .circle--xs {
+  top: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.card--selected-badge .circle--sm {
+  top: 0;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.card--selected-badge .circle--lg {
+  top: 0;
+  right: 60px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+.card--bg {
+  position: absolute;
+  z-index: 0;
+  bottom: 57px;
+  width: 100%;
+}
+.card--bg > img {
+  width: 100%;
+}
+.card--icon {
+  margin-bottom: 40px;
+}
+.card--footer {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+}
+.card--header {
+  height: 164px;
+  width: 230px;
+  margin-top: 40px;
+  margin-left: 70px;
+  text-align: center;
+}
+.card--header-price {
+  font-size: 60px;
+}
+.card--header-title {
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.card--header-currency {
+  font-size: 21px;
+  line-height: 28px;
+  color: #181818;
+}
+.card--header-number {
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 0.08em;
+}
+.card--header-hr {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+}
+.card--content {
+  position: relative;
+  background: transparent;
+  height: 50%;
+}
+.card--content-head::before {
+  content: "";
+  top: -100px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  height: 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-top: 170px solid #FFFFFF;
+}
+
+.btn {
+  display: block;
+  padding: 20px 50px;
+  font-size: 18px;
+  line-height: 18px;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.btn-rounded {
+  border-radius: 30px;
+}
+.btn-blue {
+  color: #FFFFFF;
+  background: #6FCFFB;
+}
+.btn-blue:hover {
+  background: #FD8D7B;
+}
+.btn-red {
+  color: #FFFFFF;
+  background: #FD8D7B;
+}
+.btn-red:hover {
+  background: #6FCFFB;
+}
+
+.circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: relative;
+  background: #FD8D7B;
+}
+
+.tooltip {
+  display: none;
+  background: #3B4040;
+  color: #FFFFFF;
+  position: absolute;
+  top: 50px;
+  padding: 8px 30px;
+  z-index: 100;
+  border-radius: 50px;
+}
+.tooltip--badge:hover + .tooltip {
+  display: block;
+}
+.tooltip:before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 99%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #3B4040 transparent transparent;
+}
+
+.points--section-list-item {
+  margin: 15px 0;
+}
+
+/*# sourceMappingURL=app.css.map */
