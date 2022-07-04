@@ -6,13 +6,37 @@
   position: relative;
 
   &--selected {
-    width: 400px;
-    height: 675px;
+    &:hover {
+      width: 400px;
+      height: 675px;
+
+
+      .card--content {
+        padding-top: 15px;
+
+      }
+      .card--header {
+        height: 184px;
+      }
+      .card--footer-btn {
+        bottom: 70px;
+      }
+
+      .card--bg {
+        bottom: 92px;
+      }
+    }
+
+    @include transition(0.5s, all);
 
     &-badge {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 5px;
+      right: -30px;
+      color: $colorWhite;
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: 0.08em;
 
       .circle--xs {
         top: 0;
@@ -44,48 +68,60 @@
     }
   }
 
-  &--icon{
-    margin-bottom: 40px;
+
+  &--footer-btn {
+    position: absolute;
+    bottom: -25px;
+    z-index: 101;
   }
 
-  &--footer {
-    position: absolute;
-    width: 100%;
-    bottom: -25px;
+  .footer {
+    &--info {
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: #A9A9A9;
+      position: absolute;
+      bottom: 10px;
+    }
   }
 
   &--header {
     height: 164px;
-    width: 230px;
-    margin-top: 40px;
-    margin-left: 70px;
     text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     &-price {
       font-size: 60px;
     }
 
     &-title {
-      margin-top:10px;
+      margin-top: 10px;
       font-size: 24px;
       line-height: 28px;
       text-align: center;
       letter-spacing: 0.04em;
     }
 
-    &-currency{
+    &-currency {
       font-size: 21px;
       line-height: 28px;
       color: #181818;
     }
 
-    &-number{
+    &-number {
       font-size: 60px;
       line-height: 60px;
       letter-spacing: 0.08em;
     }
 
-    &-hr{
+    &-hr {
       font-style: normal;
       font-weight: 300;
       font-size: 16px;
@@ -96,8 +132,8 @@
 
   &--content {
     position: relative;
+    padding-top: 40px;
     background: transparent;
-    height: 50%;
 
     &-head::before {
       content: "";
@@ -142,6 +178,7 @@
     background: $colorRed;
   }
 }
+
 .circle {
   @include round();
   position: relative;
@@ -153,7 +190,7 @@
   background: $colorBlack;
   color: $colorWhite;
   position: absolute;
-  top: 50px;
+  top: 40px;
   padding: 8px 30px;
   z-index: 100;
   @include rounded(50px);
@@ -175,10 +212,14 @@
 }
 
 .points {
-  &--section{
+  &--section {
     &-list {
       &-item {
-        margin: 15px 0;
+        margin: 30px 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
       }
     }
   }

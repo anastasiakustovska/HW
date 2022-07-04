@@ -1,3 +1,7 @@
 body {
   background: #9789F9;
 }
+
+*{
+  @include transition(0.5s,all);
+}
