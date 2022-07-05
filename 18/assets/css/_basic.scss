@@ -1,7 +1,18 @@
 @font-face {
   font-family: 'bebas_neuethin';
-  src: url('../fonts/bebas_neue/bebas_neue_thin-webfont.woff2') format('woff2'),
-  url('../fonts/bebas_neue/bebas_neue_thin-webfont.woff') format('woff');
+  src: url('../fonts/bebas_neue/bebas_neue_thin-webfont.woff2') format('woff2');
+  src: url('../fonts/bebas_neue/bebas_neue_thin-webfont.woff') format('woff');
+  src: url('../fonts/bebas_neue/BebasNeue-Thin.eot') format('eot');
+  src: url('../fonts/bebas_neue/BebasNeue-Thin.woff') format('woff');
+  src: url('../fonts/bebas_neue/BebasNeueBold.eot') format('eot');
+  src: url('../fonts/bebas_neue/BebasNeueBold.ttf') format('ttf');
+  src: url('../fonts/bebas_neue/BebasNeueBold.woff') format('woff');
+  src: url('../fonts/bebas_neue/BebasNeueLight.eot') format('eot');
+  src: url('../fonts/bebas_neue/BebasNeueLight.ttf') format('ttf');
+  src: url('../fonts/bebas_neue/bebasNeueLight.woff') format('woff');
+  src: url('../fonts/bebas_neue/BebasNeueRegular.eot') format('eot');
+  src: url('../fonts/bebas_neue/BebasNeueRegular.ttf') format('ttf');
+  src: url('../fonts/bebas_neue/BebasNeueRegular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
