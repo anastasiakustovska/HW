@@ -8,20 +8,16 @@ body {
 }
 
 @font-face {
-  font-family: "bebas_neuethin";
-  src: url("../fonts/bebas_neue/bebas_neue_thin-webfont.woff2") format("woff2");
-  src: url("../fonts/bebas_neue/bebas_neue_thin-webfont.woff") format("woff");
+  font-family: "Bebas_Thin";
   src: url("../fonts/bebas_neue/BebasNeue-Thin.eot") format("eot");
-  src: url("../fonts/bebas_neue/BebasNeue-Thin.woff") format("woff");
-  src: url("../fonts/bebas_neue/BebasNeueBold.eot") format("eot");
-  src: url("../fonts/bebas_neue/BebasNeueBold.ttf") format("ttf");
-  src: url("../fonts/bebas_neue/BebasNeueBold.woff") format("woff");
-  src: url("../fonts/bebas_neue/BebasNeueLight.eot") format("eot");
-  src: url("../fonts/bebas_neue/BebasNeueLight.ttf") format("ttf");
-  src: url("../fonts/bebas_neue/bebasNeueLight.woff") format("woff");
-  src: url("../fonts/bebas_neue/BebasNeueRegular.eot") format("eot");
-  src: url("../fonts/bebas_neue/BebasNeueRegular.ttf") format("ttf");
-  src: url("../fonts/bebas_neue/BebasNeueRegular.woff") format("woff");
+  src: url("../fonts/bebas_neue/BebasNeue-Thin.woff") format("woff"), url("../fonts/bebas_neue/BebasNeue-Thin.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bebas_Bold";
+  src: url("../fonts/bebas_neue/BebasNeueBold.eot");
+  src: url("../fonts/bebas_neue/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/bebas_neue/BebasNeueBold.woff") format("woff"), url("../fonts/bebas_neue/BebasNeueBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -31,7 +27,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "bebas_neuethin", sans-serif;
+  font-family: "Bebas_Thin", sans-serif;
 }
 
 a {
@@ -203,6 +199,7 @@ ul {
   flex-direction: column;
 }
 .card--header-price {
+  font-weight: 200;
   font-size: 60px;
 }
 .card--header-title {
@@ -251,6 +248,8 @@ ul {
   padding: 20px 50px;
   font-size: 18px;
   line-height: 18px;
+  font-weight: 400;
+  font-family: "Bebas_Bold", sans-serif;
   transition-property: all;
   transition-duration: 0.5s;
 }
