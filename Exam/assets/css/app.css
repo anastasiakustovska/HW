@@ -1,0 +1,144 @@
+:before,
+:after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-flex__flex-direction--column {
+  flex-direction: column;
+}
+
+.d-flex__justify--center {
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .d-flex__justify--center-tablet {
+    justify-content: center !important;
+  }
+}
+
+.d-flex__align-items--center {
+  align-items: center;
+}
+
+.d-block {
+  display: block;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.d-flex__justify--space-between {
+  justify-content: space-between;
+}
+
+.d-flex__justify--space-around {
+  justify-content: space-around;
+}
+
+.w-50 {
+  width: 50%;
+}
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.container {
+  width: 90%;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.hero {
+  height: 500px;
+}
+.hero--image {
+  position: absolute;
+  z-index: 0;
+}
+.hero--image > img {
+  height: 826px;
+  width: 100%;
+}
+.hero--text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+}
+
+.search {
+  position: relative;
+}
+.search--input {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 650px;
+  height: 60px;
+  background: #f1f1f1;
+}
+.search--input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+}
+.search--input-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  height: 50px;
+  width: 20%;
+  padding: 10px;
+  background: #5373FD;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+.search--input-button path {
+  fill: white;
+}
+.search--input-input--button:hover {
+  background: #0b7dda;
+}
+
+/*# sourceMappingURL=app.css.map */
