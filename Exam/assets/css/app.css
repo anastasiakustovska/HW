@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
 }
 
 a {
@@ -13,18 +12,13 @@ a {
   cursor: pointer;
 }
 
-h1 {
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 166%;
-  letter-spacing: 0.1em;
-  color: #000000;
-  margin-bottom: 50px;
-}
-
 .d-flex {
   display: flex;
   flex-wrap: wrap;
+}
+
+.h-100 {
+  height: 100%;
 }
 
 .d-flex__flex-direction--column {
@@ -48,6 +42,9 @@ h1 {
   display: block;
 }
 
+.text-center {
+  text-align: center;
+}
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -81,6 +78,31 @@ h1 {
   margin: auto;
 }
 
+.header {
+  height: 100px;
+  padding: 0 135px;
+}
+.header-logo {
+  margin-right: 13px;
+}
+
+.nav {
+  margin-right: 84px;
+}
+.nav-list {
+  list-style: none;
+}
+.nav-list-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin: 0 10px;
+  height: 18px;
+}
+
 .hero {
   height: 500px;
 }
@@ -92,6 +114,12 @@ h1 {
   height: 826px;
   width: 100%;
 }
+.hero--footer {
+  position: absolute;
+  z-index: 9999;
+  color: white;
+  bottom: 0;
+}
 .hero--text {
   text-align: center;
   position: absolute;
@@ -101,18 +129,40 @@ h1 {
   z-index: 1;
   color: white;
 }
+.hero--text--title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 8px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.hero--text--subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.31em;
+  margin-bottom: 48px;
+  font-family: "Josefin Sans", sans-serif;
+}
 
 .search {
   position: relative;
 }
 .search--input {
-  padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
   float: left;
   width: 650px;
   height: 60px;
   background: #f1f1f1;
+  font-family: "Josefin Sans", sans-serif;
+  padding-left: 36px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .search--input::placeholder {
   font-weight: 400;
@@ -126,7 +176,6 @@ h1 {
   top: 5px;
   height: 50px;
   width: 20%;
-  padding: 10px;
   background: #5373FD;
   color: white;
   font-size: 17px;
@@ -134,11 +183,25 @@ h1 {
   border-left: none;
   cursor: pointer;
 }
+.search--input-button-info {
+  margin: 12px;
+}
 .search--input-button path {
   fill: white;
 }
 .search--input-input--button:hover {
   background: #0b7dda;
+}
+
+.scroll {
+  height: 120px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.why--image {
+  position: absolute;
+  z-index: 0;
 }
 
 /*# sourceMappingURL=app.css.map */
