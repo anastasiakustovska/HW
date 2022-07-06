@@ -69,6 +69,7 @@ ul {
 
 .container {
   width: 90%;
+  max-width: 1170px;
   margin: auto;
 }
 
@@ -79,6 +80,12 @@ ul {
 .header {
   text-align: center;
   font-family: "Delius Unicase", cursive;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: 0.05em;
 }
 
 .d-grid {
@@ -91,9 +98,28 @@ ul {
   grid-template-columns: 770px 370px;
 }
 .d-grid-repeat {
-  grid-template-columns: repeat(3, minmax(300px, auto));
-  grid-auto-rows: 300px;
+  grid-template-columns: repeat(3, minmax(370px, auto));
+  grid-auto-rows: 370px;
   gap: 20px;
+}
+.d-grid-repeat > * {
+  width: 370px;
+  height: 370px;
+}
+.d-grid-repeat > *:nth-child(2), .d-grid-repeat *:nth-child(5), .d-grid-repeat *:nth-child(6) {
+  grid-column: span 1;
+  grid-row: span 2;
+  height: 770px;
+}
+.d-grid-repeat > *:nth-child(8) {
+  grid-column: span 2;
+  grid-row: span 1;
+  width: 770px;
+}
+.d-grid-repeat > *:nth-child(9) {
+  grid-column: span 2;
+  grid-row: span 1;
+  width: 770px;
 }
 .d-grid > * {
   margin: 15px 0;
