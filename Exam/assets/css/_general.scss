@@ -38,6 +38,12 @@
   }
 }
 
+.p {
+  &-relative {
+    position: relative;
+  }
+}
+
 .d-flex__justify--space-between {
   justify-content: space-between;
 }
@@ -65,7 +71,6 @@
 }
 
 .container{
-  width: 90%;
-  max-width: 1170px;
   margin: auto;
+  max-width: 70%;
 }

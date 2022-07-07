@@ -14,3 +14,14 @@
   transition-property: $properties;
   transition-duration: $duration;
 }
+
+@mixin round ($height: 20px){
+  height: $height;
+  width: $height;
+  border-radius: 50%;
+}
+
+@mixin rounded($borderRadius: 15px) {
+  border-radius: $borderRadius;
+}
+
