@@ -67,6 +67,7 @@
   font-size: 17px;
   padding: 20px 32px;
   font-family: 'Aleo', serif;
+  display: block;
 
   &-purple {
     color: $colorWhite;
@@ -216,18 +217,19 @@
   }
 
 
-    &--image {
-      &:first-child {
-        margin-bottom: 16px;
-      }
-      &:last-child {
-        margin-left: 80px;
-      }
+  &--image {
+    &:first-child {
+      margin-bottom: 16px;
     }
+
+    &:last-child {
+      margin-left: 80px;
+    }
+  }
 }
 
 .footer {
-  background: #000000;
+  background: $colorBlack;
   color: $colorWhite;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -287,8 +289,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-right: calc(50vw - 465px);
-  padding-left: calc(50vw - 465px);
   background: $colorDarkGrey;
   height: 300px;
 
@@ -298,17 +298,168 @@
     justify-content: center;
     position: absolute;
     z-index: 0;
+
     & > &-wrapper {
-      margin-bottom: 100px;
+      margin-bottom: 150px;
     }
   }
 
   &--icon {
     background: $colorDarkGrey;
-  }
-  &--item {
     @include round(96px);
+
+  }
+
+  &--item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $colorWhite;
+
     z-index: 10;
   }
 }
 
+.book-now {
+  position: relative;
+  height: 684px;
+  overflow: hidden;
+
+  &--background {
+    position: absolute;
+    height: 684px;
+  }
+
+  &--window {
+    background: $colorDarkGrey1;
+    padding: 44px 32px;
+    opacity: 0.9;
+    max-width: 650px;
+    margin-right: 650px;
+  }
+
+  &--reversed {
+    .book-now--window{
+      margin-left: 650px;
+      margin-right: 0;
+    }
+  }
+
+  &-btn {
+    width: 210px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  &--description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+
+    &--country {
+      font-family: 'Josefin Sans', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 0.1em;
+      color: $colorWhite;
+      margin-bottom: 16px;
+    }
+
+    &--name {
+      font-family: 'Josefin Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: $colorWhite;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    &--info {
+      font-family: 'Josefin Sans', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 28px;
+      color: $colorWhite;
+      letter-spacing: 0.1em;
+      margin-bottom: 24px;
+
+    }
+  }
+}
+
+.tourists {
+  position: relative;
+  overflow: hidden;
+  min-height: 680px;
+
+  &--info{
+    width: 100%;
+
+    &__opinion{
+      background-color: #232323;
+      padding: 45px 55px;
+      max-width: 885px;
+    }
+    &__name{
+      font-family: "Josefin regular", sans-serif;
+      font-size: 20px;
+      color: $colorWhite;
+      line-height: 1.5;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    &__text{
+      font-family: "Josefin regular", sans-serif;
+      font-size: 16px;
+      color: #d0d0d0;
+      line-height: 1.5;
+      position: relative;
+    }
+  }
+
+  &--section {
+    &__title {
+      font-family: "Aleo regular", serif;
+      font-size: 36px;
+      color: $colorWhite;
+      line-height: 1.5;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+  }
+
+  &--background {
+    width: 100%;
+    position: absolute;
+
+    > img {
+      width: 100%;
+    }
+  }
+
+  &--content {
+    @include centerAbsolute();
+    z-index: 10;
+  }
+}
+
+.text {
+  &--quote {
+    margin-bottom: 5px;
+  }
+}
