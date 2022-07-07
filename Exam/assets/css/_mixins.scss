@@ -15,7 +15,7 @@
   transition-duration: $duration;
 }
 
-@mixin round ($height: 20px){
+@mixin round($height: 20px) {
   height: $height;
   width: $height;
   border-radius: 50%;

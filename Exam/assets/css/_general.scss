@@ -76,6 +76,11 @@
 }
 
 .container {
-  margin: auto;
   max-width: 70%;
+  margin: auto;
+
+  @include minWidth($breakpointSmallDesktop) {
+    max-width: 100%;
+    padding: 0 110px;
+  }
 }

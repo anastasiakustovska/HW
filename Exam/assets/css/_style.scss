@@ -5,6 +5,10 @@
   &-logo {
     margin-right: 13px;
   }
+
+  &--scroll {
+    color: $colorWhite;
+  }
 }
 
 .hero {
@@ -65,6 +69,9 @@
 .btn {
   border: none;
   font-size: 17px;
+  height: 60px;
+  width: 213px;
+  text-align: center;
   padding: 20px 32px;
   font-family: 'Aleo', serif;
   display: block;
@@ -77,6 +84,10 @@
 
 .search {
   position: relative;
+
+  &--button-icon {
+    margin-right: 5px;
+  }
 
   &--input {
     font-size: 17px;
@@ -103,6 +114,8 @@
       height: 50px;
       width: 20%;
       cursor: pointer;
+      text-align: center;
+      vertical-align: middle;
       padding: 0;
 
       &-info {
@@ -174,6 +187,12 @@
 
   &--background {
     width: 100%;
+    position: absolute;
+
+    > img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &--content {
@@ -307,7 +326,6 @@
   &--icon {
     background: $colorDarkGrey;
     @include round(96px);
-
   }
 
   &--item {
@@ -325,12 +343,18 @@
 
 .book-now {
   position: relative;
-  height: 684px;
+  height: 712px;
   overflow: hidden;
 
   &--background {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    height: 684px;
+
+    > img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &--window {
@@ -342,7 +366,7 @@
   }
 
   &--reversed {
-    .book-now--window{
+    .book-now--window {
       margin-left: 650px;
       margin-right: 0;
     }
@@ -405,15 +429,24 @@
   overflow: hidden;
   min-height: 680px;
 
-  &--info{
+  &--photo {
+    @include minWidth($breakpointTablet) {
+      max-width: 33%;
+    }
+  }
+
+  &--info {
     width: 100%;
 
-    &__opinion{
+    &__opinion {
       background-color: #232323;
       padding: 45px 55px;
-      max-width: 885px;
+      @include minWidth($breakpointTablet) {
+        max-width: 66%;
+      }
     }
-    &__name{
+
+    &__name {
       font-family: "Josefin regular", sans-serif;
       font-size: 20px;
       color: $colorWhite;
@@ -422,7 +455,8 @@
       text-transform: uppercase;
       margin-bottom: 40px;
     }
-    &__text{
+
+    &__text {
       font-family: "Josefin regular", sans-serif;
       font-size: 16px;
       color: #d0d0d0;
