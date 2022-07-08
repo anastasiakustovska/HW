@@ -361,15 +361,7 @@
     background: $colorDarkGrey1;
     padding: 44px 32px;
     opacity: 0.9;
-    max-width: 650px;
-    margin-right: 650px;
-  }
-
-  &--reversed {
-    .book-now--window {
-      margin-left: 650px;
-      margin-right: 0;
-    }
+    max-width: 560px;
   }
 
   &-btn {
@@ -432,6 +424,10 @@
   &--photo {
     @include minWidth($breakpointTablet) {
       max-width: 33%;
+
+      > img {
+        height: 100%;
+      }
     }
   }
 

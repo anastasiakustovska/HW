@@ -5,6 +5,10 @@
   &__justify--flex-end {
     justify-content: flex-end;
   }
+
+  &__justify--flex-start {
+    justify-content: flex-start;
+  }
 }
 
 .h-100 {
@@ -82,5 +86,10 @@
   @include minWidth($breakpointSmallDesktop) {
     max-width: 100%;
     padding: 0 110px;
+  }
+
+  @include minWidth($breakpointTablet) {
+    max-width: 100%;
+    padding: 0 32px;
   }
 }

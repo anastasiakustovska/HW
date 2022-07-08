@@ -26,6 +26,9 @@ html {
 .d-flex__justify--flex-end {
   justify-content: flex-end;
 }
+.d-flex__justify--flex-start {
+  justify-content: flex-start;
+}
 
 .h-100 {
   height: 100%;
@@ -94,6 +97,12 @@ html {
   .container {
     max-width: 100%;
     padding: 0 110px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0 32px;
   }
 }
 
@@ -413,12 +422,7 @@ html {
   background: rgba(35, 35, 35, 0.8980392157);
   padding: 44px 32px;
   opacity: 0.9;
-  max-width: 650px;
-  margin-right: 650px;
-}
-.book-now--reversed .book-now--window {
-  margin-left: 650px;
-  margin-right: 0;
+  max-width: 560px;
 }
 .book-now-btn {
   width: 210px;
@@ -474,6 +478,9 @@ html {
 @media screen and (min-width: 1024px) {
   .tourists--photo {
     max-width: 33%;
+  }
+  .tourists--photo > img {
+    height: 100%;
   }
 }
 .tourists--info {
