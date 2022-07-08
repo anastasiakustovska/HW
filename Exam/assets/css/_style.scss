@@ -154,6 +154,16 @@
   background: $colorPurple;
   color: $colorWhite;
 
+  @include minWidth($breakpointMobile) {
+    height: 136px;
+  }
+
+  &--wrapper {
+    @include widthBetween($breakpointMobile, $breakpointSmallDesktop - 1) {
+      justify-content: center;
+    }
+  }
+
   &--list {
     font-family: 'Josefin Sans', sans-serif;
 
@@ -188,6 +198,7 @@
   &--background {
     width: 100%;
     position: absolute;
+    height: 100%;
 
     > img {
       width: 100%;
@@ -211,11 +222,24 @@
     text-transform: capitalize;
     margin-bottom: 24px;
     font-family: 'Aleo', serif;
+
+    @include maxWidth($breakpointSmallDesktop) {
+      text-align: center;
+    }
   }
 
   &--text {
     width: 50%;
     font-family: 'Josefin Sans', sans-serif;
+
+    @include maxWidth($breakpointSmallDesktop) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+    }
   }
 
   &--description {
@@ -229,21 +253,49 @@
       line-height: 28px;
       letter-spacing: 0.1em;
 
+      @include maxWidth($breakpointSmallDesktop) {
+        width: 100%;
+      }
+
       &:last-child {
         margin-top: 20px;
       }
     }
   }
 
+  &--wrapper {
+    @include maxWidth($breakpointTablet) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &--images {
+    @include maxWidth($breakpointSmallDesktop) {
+      flex-direction: row;
+      margin-bottom: 32px;
+      justify-content: center;
+    }
+  }
 
   &--image {
     &:first-child {
       margin-bottom: 16px;
+
+      @include maxWidth($breakpointSmallDesktop) {
+        margin: 0;
+      }
     }
 
     &:last-child {
-      margin-left: 80px;
+      @include minWidth($breakpointSmallDesktop) {
+        margin-left: 80px;
+      }
     }
+
+    @include maxWidth($breakpointSmallDesktop) {
+      margin: 0 12px;
+    }
+
   }
 }
 
@@ -311,12 +363,22 @@
   background: $colorDarkGrey;
   height: 300px;
 
+  @include maxWidth($breakpointSmallDesktop) {
+    height: initial;
+    padding: 60px;
+  }
+
+
   &--background {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     z-index: 0;
+
+    @include maxWidth($breakpointSmallDesktop) {
+      display: none;
+    }
 
     & > &-wrapper {
       margin-bottom: 150px;
@@ -326,6 +388,10 @@
   &--icon {
     background: $colorDarkGrey;
     @include round(96px);
+
+    @include maxWidth($breakpointSmallDesktop) {
+      height: initial;
+    }
   }
 
   &--item {
@@ -338,7 +404,21 @@
     color: $colorWhite;
 
     z-index: 10;
+    @include maxWidth($breakpointSmallDesktop) {
+      margin-bottom: 60px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
   }
+
+  &--main {
+    @include maxWidth($breakpointSmallDesktop) {
+      flex-direction: column;
+    }
+  }
+
 }
 
 .book-now {
@@ -362,6 +442,10 @@
     padding: 44px 32px;
     opacity: 0.9;
     max-width: 560px;
+
+    @include maxWidth($breakpointSmallDesktop) {
+      max-width: 100%;
+    }
   }
 
   &-btn {
@@ -420,24 +504,40 @@
   position: relative;
   overflow: hidden;
   min-height: 680px;
+  @include maxWidth($breakpointSmallDesktop) {
+    height: 925px;
+  }
 
   &--photo {
-    @include minWidth($breakpointTablet) {
+    @include minWidth($breakpointSmallDesktop) {
       max-width: 33%;
 
       > img {
         height: 100%;
       }
     }
+    @include maxWidth($breakpointSmallDesktop) {
+      > img {
+        width: 100%;
+      }
+    }
+
   }
 
   &--info {
     width: 100%;
 
+    @include maxWidth($breakpointSmallDesktop) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
     &__opinion {
       background-color: #232323;
       padding: 45px 55px;
-      @include minWidth($breakpointTablet) {
+      @include minWidth($breakpointSmallDesktop) {
         max-width: 66%;
       }
     }
@@ -459,6 +559,13 @@
       line-height: 1.5;
       position: relative;
     }
+
+    &--content {
+      @include minWidth($breakpointSmallDesktop) {
+        max-width: 70%;
+        margin: auto;
+      }
+    }
   }
 
   &--section {
@@ -470,21 +577,31 @@
       font-weight: 400;
       text-align: center;
       margin-bottom: 60px;
+
+      @include maxWidth($breakpointSmallDesktop) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
     }
   }
 
   &--background {
     width: 100%;
     position: absolute;
+    height: 100%;
 
     > img {
       width: 100%;
+      height: 100%;
     }
   }
 
   &--content {
     @include centerAbsolute();
     z-index: 10;
+
+    @include maxWidth($breakpointSmallDesktop) {
+    }
   }
 }
 

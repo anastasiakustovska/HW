@@ -31,3 +31,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin widthBetween($minWidth, $maxWidth) {
+  @media screen and (min-width: $minWidth) and (max-width: $maxWidth) {
+    @content;
+  }
+}
