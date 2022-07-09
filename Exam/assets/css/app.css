@@ -152,6 +152,7 @@ html {
 
 .header {
   padding: 0 135px;
+  position: relative;
 }
 .header-logo {
   font-family: "Josefin Sans", sans-serif;
@@ -169,6 +170,8 @@ html {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  display: block;
+  width: 100%;
   letter-spacing: 0.2em;
   font-style: normal;
   color: white;
@@ -330,9 +333,6 @@ html {
 }
 .search--input-button path {
   fill: white;
-}
-.search--input-input--button:hover {
-  background: #0b7dda;
 }
 
 .scroll {
@@ -680,7 +680,16 @@ html {
   align-items: center;
   justify-content: center;
   position: absolute;
+  top: 50px;
+  overflow: hidden;
+  right: 0;
+  left: 0;
   z-index: 0;
+}
+@media screen and (max-width: 1200px) {
+  .steps--background img {
+    width: 66%;
+  }
 }
 @media screen and (max-width: 992px) {
   .steps--background {
@@ -710,6 +719,9 @@ html {
   text-transform: capitalize;
   color: white;
   z-index: 10;
+}
+.steps--item:nth-child(odd) {
+  background: #333333;
 }
 @media screen and (max-width: 992px) {
   .steps--item {
