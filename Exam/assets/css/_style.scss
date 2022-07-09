@@ -1,12 +1,24 @@
 .header {
-  height: 100px;
   padding: 0 135px;
 
   &-logo {
-    margin-right: 13px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
   }
 
   &--scroll {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-style: normal;
     color: $colorWhite;
   }
 }
@@ -42,6 +54,11 @@
     transform: translate(-50%, -50%);
     z-index: 99;
     color: $colorWhite;
+
+    @include maxWidth($breakpointMobile) {
+      max-width: calc(100% - 36px);
+      width: 100%;
+    }
 
     &--title {
       font-style: normal;
@@ -91,7 +108,6 @@
 
   &--input {
     font-size: 17px;
-    border: 1px solid grey;
     float: left;
     width: 650px;
     height: 60px;
@@ -99,12 +115,26 @@
     padding-left: 36px;
     padding-top: 20px;
     padding-bottom: 20px;
+    border: none;
+    outline: none;
+
+    @include maxWidth($breakpointTablet) {
+      width: 100%;
+    }
 
     &::placeholder {
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
       letter-spacing: 0.2em;
+
+      @include maxWidth($breakpointMobile) {
+        padding: 0;
+      }
+    }
+
+    &:focus, &:focus-visible, &:focus-within {
+      border: none;
     }
 
     &-button {
@@ -149,25 +179,100 @@
   top: 0;
   position: sticky;
   z-index: 999;
-  height: 84px;
   width: 100%;
   background: $colorPurple;
   color: $colorWhite;
+  height: 84px;
 
-  @include minWidth($breakpointMobile) {
+  &--burger {
+    &-container {
+      position: absolute;
+      right: 18px;
+      top: 40px;
+      width: 40px;
+    }
+
+    &-item {
+      &::before, &::after {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        height: 2px;
+        width: 30px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+      }
+
+      &::before {
+        content: '';
+        margin-top: -9px;
+      }
+
+      &::after {
+        content: '';
+        margin-top: 9px;
+      }
+
+      display: block;
+      background-color: #fff;
+      position: absolute;
+      height: 2px;
+      width: 30px;
+      transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      border-radius: 2px;
+    }
+  }
+
+  @include maxWidth($breakpointTablet) {
     height: 136px;
   }
 
+  @include maxWidth($breakpointMobile) {
+    height: 84px;
+  }
+
+  &--list-container {
+    @include maxWidth($breakpointMobile) {
+      height: 0;
+    }
+  }
+
   &--wrapper {
-    @include widthBetween($breakpointMobile, $breakpointSmallDesktop - 1) {
+    @include widthBetween($breakpointMobile, $breakpointSmallDesktop) {
       justify-content: center;
+    }
+
+    @include maxWidth($breakpointMobile) {
+      flex-direction: column;
     }
   }
 
   &--list {
     font-family: 'Josefin Sans', sans-serif;
+    transition: height, 400ms;
+
+    @include maxWidth($breakpointMobile) {
+      height: 0;
+      position: absolute;
+      top: 30px;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
 
     &-item {
+      @include maxWidth($breakpointMobile) {
+        display: none;
+        justify-content: center;
+        margin: 0;
+        padding: 12px 0;
+        width: 100%;
+        background-color: $colorPurple;
+      }
+
       * {
         color: $colorWhite;
       }
@@ -182,6 +287,44 @@
     }
   }
 }
+
+#nav--toggler:checked + .nav--list-container {
+  .nav--list {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+
+    &-item {
+      display: flex;
+    }
+  }
+
+  & {
+    .nav--burger-item::after{
+      top: 0;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      margin: 0;
+    }
+    .nav--burger-item::before {
+      top: 0;
+      margin: 0;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+    }
+
+    .nav--burger-item {
+      background-color: transparent;
+    }
+  }
+}
+
 
 .why {
   &--image {
@@ -211,6 +354,9 @@
     z-index: 10;
     top: 0;
     padding: 124px 0;
+    @include widthBetween($breakpointMobile, $breakpointSmallDesktop) {
+      padding: 60px 0;
+    }
   }
 
   &--title {
@@ -223,7 +369,7 @@
     margin-bottom: 24px;
     font-family: 'Aleo', serif;
 
-    @include maxWidth($breakpointSmallDesktop) {
+    @include maxWidth($breakpointTablet) {
       text-align: center;
     }
   }
@@ -238,7 +384,6 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-
     }
   }
 
@@ -253,7 +398,7 @@
       line-height: 28px;
       letter-spacing: 0.1em;
 
-      @include maxWidth($breakpointSmallDesktop) {
+      @include maxWidth($breakpointTablet) {
         width: 100%;
       }
 
@@ -264,20 +409,30 @@
   }
 
   &--wrapper {
-    @include maxWidth($breakpointTablet) {
+    @include maxWidth($breakpointSmallDesktop) {
       flex-direction: column-reverse;
+      align-items: center;
     }
   }
 
   &--images {
     @include maxWidth($breakpointSmallDesktop) {
       flex-direction: row;
-      margin-bottom: 32px;
-      justify-content: center;
+      justify-content: space-around;
+      margin-bottom: 100px;
+      flex-wrap: nowrap;
     }
   }
 
   &--image {
+    @include maxWidth($breakpointSmallDesktop) {
+      width: 50%;
+      margin: 0 12px;
+      > img {
+        width: 100%;
+      }
+    }
+
     &:first-child {
       margin-bottom: 16px;
 
@@ -291,11 +446,6 @@
         margin-left: 80px;
       }
     }
-
-    @include maxWidth($breakpointSmallDesktop) {
-      margin: 0 12px;
-    }
-
   }
 }
 
@@ -577,6 +727,7 @@
       font-weight: 400;
       text-align: center;
       margin-bottom: 60px;
+      margin-top: 120px;
 
       @include maxWidth($breakpointSmallDesktop) {
         margin-top: 60px;

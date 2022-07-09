@@ -80,21 +80,42 @@
 }
 
 .container {
-  max-width: 70%;
   margin: auto;
+  max-width: calc(100% - 36px);
 
-  @include minWidth($breakpointDesktop) {
-    max-width: 100%;
-    padding: 0 110px;
+  @include minWidth($breakpointMobile) {
+    max-width: getContainerWidth($breakpointMobile);
+  }
+
+  @include minWidth($breakpointTablet) {
+    max-width: getContainerWidth($breakpointTablet);
   }
 
   @include minWidth($breakpointSmallDesktop) {
-    max-width: 100%;
-    padding: 0 32px;
+    max-width: getContainerWidth($breakpointSmallDesktop);
   }
 
-  @include maxWidth($breakpointSmallDesktop) {
-    max-width: 100%;
-    padding: 0 24px;
+  @include minWidth($breakpointDesktop) {
+    max-width: getContainerWidth($breakpointDesktop);
+  }
+
+  @include minWidth($breakpointLargeDesktop) {
+    max-width: getContainerWidth($breakpointLargeDesktop);
+  }
+}
+
+.hidden {
+  display: none;
+
+  &-mobile {
+    @include maxWidth($breakpointMobile) {
+      display: none;
+    }
+  }
+}
+
+.text {
+  &-white {
+    color: $colorWhite;
   }
 }

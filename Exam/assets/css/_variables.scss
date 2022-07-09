@@ -4,7 +4,14 @@ $colorPurple: #5373FD;
 $colorDarkGrey: #333333;
 $colorDarkGrey1: #232323E5;
 
-$breakpointMobile: 580px;
+$breakpointMobile: 576px;
 $breakpointTablet: 768px;
-$breakpointSmallDesktop: 1024px;
-$breakpointDesktop: 1360px;
+$breakpointSmallDesktop: 992px;
+$breakpointDesktop: 1200px;
+$breakpointLargeDesktop: 1400px;
+
+$mobileContainerW: 540px;
+$tabletContainerW: 720px;
+$smallDesktopContainerW: 960px;
+$desktopContainerW: 1140px;
+$largeDesktopContainerW: 1320px;

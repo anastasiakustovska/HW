@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>BHROMAON</title>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 </head>
 <body>
 <header>
@@ -40,7 +42,7 @@
         <div class="hero--footer d-flex d-flex__justify--center w-100">
             <div class="text-center">
                 <p>
-                    <a class="header--scroll" href="#book-now">Scroll Down</a>
+                    <a class="header--scroll" href="#about-us">Scroll Down</a>
                     <br>
                     <svg fill="none" height="16" viewBox="0 0 14 16" width="14" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.46966 11.9211L0.396437 5.84786C0.103531 5.55496 0.103531 5.08008 0.396437 4.78721L1.10478 4.07886C1.39719 3.78646 1.87109 3.7859 2.16419 4.07761L7 8.89077L11.8358 4.07761C12.1289 3.7859 12.6028 3.78646 12.8952 4.07886L13.6035 4.78721C13.8964 5.08011 13.8964 5.55499 13.6035 5.84786L7.53034 11.9211C7.23744 12.214 6.76256 12.214 6.46966 11.9211Z"
@@ -54,10 +56,16 @@
 <main>
     <div class="nav w-100">
         <div class="container d-flex d-flex__align-items--center d-flex__justify--space-between h-100 nav--wrapper">
-            <div class="header-logo">
-                <img alt="logo" src="assets/images/Bhromaon.png">
+            <div class="header-logo text-uppercase">
+                <a href="#" class="text-white">
+                    Bhromaon
+                </a>
             </div>
-            <div class="d-flex">
+            <input id="nav--toggler" type="checkbox" class="hidden">
+            <div class="d-flex nav--list-container">
+                <label for="nav--toggler" class="nav--burger-container">
+                    <span class="nav--burger-item"></span>
+                </label>
                 <nav class="d-flex d-flex__align-items--center">
                     <ul class="d-flex nav--list">
                         <li class="nav--list-item">
@@ -85,10 +93,10 @@
             </div>
         </div>
     </div>
-    <div class="w-100 about-us">
+    <div class="w-100 about-us" id="about-us">
         <div class="about-us--background"><img alt="" src="assets/images/WhyBackground.png"></div>
         <div class="about-us--content w-100 d-flex">
-            <div class="about-us--wrapper w-100 container d-flex d-flex__justify--space-between">
+            <div class="about-us--wrapper container w-100 d-flex d-flex__justify--space-between">
                 <div class="about-us--text">
                     <div class="about-us--title">
                         Why Choose Us
