@@ -1,9 +1,18 @@
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 5px;
+  }
+}
 :before,
 :after,
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all, 0.5s;
 }
 
 a {
@@ -32,6 +41,15 @@ html {
 
 .h-100 {
   height: 100%;
+}
+
+.only-mobile {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .only-mobile {
+    display: block;
+  }
 }
 
 .d-flex__flex-direction--column {
@@ -145,6 +163,7 @@ html {
   text-transform: uppercase;
 }
 .header--scroll {
+  position: absolute;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -153,6 +172,13 @@ html {
   letter-spacing: 0.2em;
   font-style: normal;
   color: white;
+  animation: MoveUpDown 1s linear infinite;
+}
+.header--scroll:hover {
+  color: #5373FD;
+}
+.header--scroll:hover path {
+  fill: #5373FD;
 }
 
 .hero {
@@ -219,10 +245,34 @@ html {
   padding: 20px 32px;
   font-family: "Aleo", serif;
   display: block;
+  position: relative;
+  overflow: hidden;
+}
+.btn:not(.btn-purple):hover {
+  background: white;
+  color: #5373FD;
+  border: 1px solid #5373FD;
+}
+.btn:not(.btn-purple):hover path {
+  fill: #5373FD;
 }
 .btn-purple {
+  position: relative;
   color: white;
+  background: url("../images/Rectangle.png") no-repeat;
+}
+.btn-purple:after {
+  content: "";
+  top: 0;
   background: #5373FD;
+  display: block;
+  height: 100%;
+  width: 180px;
+  position: absolute;
+  z-index: -2;
+}
+.btn-purple:hover:after {
+  background: #8692c9;
 }
 
 .search {
@@ -272,6 +322,8 @@ html {
   text-align: center;
   vertical-align: middle;
   padding: 0;
+  background: #5373FD;
+  color: white;
 }
 .search--input-button-info {
   margin: 12px;
@@ -297,7 +349,7 @@ html {
 
 .nav {
   top: 0;
-  position: sticky;
+  position: relative;
   z-index: 999;
   width: 100%;
   background: #5373FD;
@@ -356,9 +408,10 @@ html {
     justify-content: center;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .nav--wrapper {
     flex-direction: column;
+    justify-content: center;
   }
 }
 .nav--list {
@@ -378,6 +431,13 @@ html {
     align-items: center;
   }
 }
+@media screen and (max-width: 992px) {
+  .nav--list {
+    margin-top: 32px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
 .nav--list-item {
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -385,7 +445,10 @@ html {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  margin: 0 10px;
+  margin: 0 8px;
+}
+.nav--list-item:hover * {
+  color: rgba(35, 35, 35, 0.8980392157);
 }
 @media screen and (max-width: 576px) {
   .nav--list-item {
@@ -449,6 +512,11 @@ html {
 .about-us--background > img {
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 992px) {
+  .about-us--background {
+    width: initial;
+  }
 }
 .about-us--content {
   position: absolute;
@@ -763,7 +831,7 @@ html {
   }
 }
 .tourists--info__opinion {
-  background-color: #232323;
+  background-color: #333333;
   padding: 45px 55px;
 }
 @media screen and (min-width: 992px) {
@@ -794,7 +862,7 @@ html {
   }
 }
 .tourists--section__title {
-  font-family: "Aleo regular", serif;
+  font-family: "Aleo", serif;
   font-size: 36px;
   color: white;
   line-height: 1.5;
