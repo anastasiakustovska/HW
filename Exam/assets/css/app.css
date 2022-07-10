@@ -123,7 +123,7 @@ html {
 }
 @media screen and (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 944px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -296,9 +296,19 @@ html {
   border: none;
   outline: none;
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .search--input {
+    max-width: calc(100vw - 61px);
+  }
+}
 @media screen and (max-width: 768px) {
   .search--input {
-    width: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .search--input {
+    padding-left: 10px;
   }
 }
 .search--input::placeholder {
@@ -307,9 +317,9 @@ html {
   line-height: 20px;
   letter-spacing: 0.2em;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 540px) {
   .search--input::placeholder {
-    padding: 0;
+    font-size: 12px;
   }
 }
 .search--input:focus, .search--input:focus-visible, .search--input:focus-within {
@@ -320,13 +330,13 @@ html {
   right: 5px;
   top: 5px;
   height: 50px;
-  width: 20%;
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
   padding: 0;
   background: #5373FD;
   color: white;
+  width: 139px;
 }
 .search--input-button-info {
   margin: 12px;
@@ -388,7 +398,7 @@ html {
   content: "";
   margin-top: 9px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .nav {
     height: 136px;
   }
@@ -416,11 +426,11 @@ html {
 }
 .nav--list {
   font-family: "Josefin Sans", sans-serif;
-  transition: height, 400ms;
+  transition: all, 400ms ease-in-out;
 }
 @media screen and (max-width: 576px) {
   .nav--list {
-    height: 0;
+    opacity: 0;
     position: absolute;
     top: 30px;
     margin-top: 50px;
@@ -452,12 +462,12 @@ html {
 }
 @media screen and (max-width: 576px) {
   .nav--list-item {
-    display: none;
+    height: 0;
     justify-content: center;
-    margin: 0;
-    padding: 12px 0;
+    top: 0;
     width: 100%;
     background-color: #5373FD;
+    display: flex;
   }
 }
 .nav--list-item * {
@@ -465,12 +475,14 @@ html {
 }
 
 #nav--toggler:checked + .nav--list-container .nav--list {
+  transition: all, 400ms ease-in-out;
   display: flex;
   height: fit-content;
+  opacity: 1;
   flex-direction: column;
 }
 #nav--toggler:checked + .nav--list-container .nav--list-item {
-  display: flex;
+  padding: 32px;
 }
 #nav--toggler:checked + .nav--list-container .nav--burger-item::after {
   top: 0;
@@ -524,7 +536,7 @@ html {
   top: 0;
   padding: 124px 0;
 }
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .about-us--content {
     padding: 60px 0;
   }
@@ -555,6 +567,7 @@ html {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: -72px;
   }
 }
 .about-us--description {
@@ -723,6 +736,11 @@ html {
 .steps--item:nth-child(odd) {
   background: #333333;
 }
+@media screen and (min-width: 1400px) {
+  .steps--item:nth-child(odd) {
+    background: transparent;
+  }
+}
 @media screen and (max-width: 992px) {
   .steps--item {
     margin-bottom: 60px;
@@ -757,9 +775,29 @@ html {
   opacity: 0.9;
   max-width: 560px;
 }
+@media screen and (min-width: 1400px) {
+  .book-now--window {
+    max-width: 650px;
+  }
+}
 @media screen and (max-width: 992px) {
   .book-now--window {
     max-width: 100%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .book-now--content {
+    margin: 220px 300px 120px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .book-now--content {
+    margin: 120px 24px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .book-now--content {
+    margin: 120px 18px;
   }
 }
 .book-now-btn {
@@ -834,12 +872,14 @@ html {
 .tourists--info {
   width: 100%;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .tourists--info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tourists--info {
+    flex-direction: row;
   }
 }
 .tourists--info__opinion {

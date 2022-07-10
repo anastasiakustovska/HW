@@ -160,8 +160,16 @@
     border: none;
     outline: none;
 
+    @include widthBetween($breakpointTablet, $breakpointSmallDesktop) {
+      max-width: calc(100vw - 61px);
+    }
+
     @include maxWidth($breakpointTablet) {
-      width: 100%;
+      max-width: 100%;
+    }
+
+    @include maxWidth($mobileContainerW) {
+      padding-left: 10px;
     }
 
     &::placeholder {
@@ -170,9 +178,10 @@
       line-height: 20px;
       letter-spacing: 0.2em;
 
-      @include maxWidth($breakpointMobile) {
-        padding: 0;
+      @include maxWidth($mobileContainerW) {
+        font-size: 12px;
       }
+
     }
 
     &:focus, &:focus-visible, &:focus-within {
@@ -184,13 +193,13 @@
       right: 5px;
       top: 5px;
       height: 50px;
-      width: 20%;
       cursor: pointer;
       text-align: center;
       vertical-align: middle;
       padding: 0;
       background: $colorPurple;
       color: $colorWhite;
+      width: 139px;
 
       &-info {
         margin: 12px;
@@ -263,7 +272,7 @@
     }
   }
 
-  @include maxWidth($breakpointTablet) {
+  @include maxWidth($breakpointSmallDesktop) {
     height: 136px;
   }
 
@@ -290,10 +299,10 @@
 
   &--list {
     font-family: 'Josefin Sans', sans-serif;
-    transition: height, 400ms;
+    transition: all, 400ms ease-in-out;
 
     @include maxWidth($breakpointMobile) {
-      height: 0;
+      opacity: 0;
       position: absolute;
       top: 30px;
       margin-top: 50px;
@@ -318,12 +327,12 @@
       }
 
       @include maxWidth($breakpointMobile) {
-        display: none;
+        height: 0;
         justify-content: center;
-        margin: 0;
-        padding: 12px 0;
+        top: 0;
         width: 100%;
         background-color: $colorPurple;
+        display: flex;
       }
 
       * {
@@ -343,12 +352,15 @@
 
 #nav--toggler:checked + .nav--list-container {
   .nav--list {
+    transition: all, 400ms ease-in-out;
+
     display: flex;
     height: fit-content;
+    opacity: 1;
     flex-direction: column;
 
     &-item {
-      display: flex;
+      padding: 32px;
     }
   }
 
@@ -413,7 +425,7 @@
     top: 0;
     padding: 124px 0;
 
-    @include widthBetween($breakpointMobile, $breakpointSmallDesktop) {
+    @include maxWidth($breakpointSmallDesktop) {
       padding: 60px 0;
     }
   }
@@ -443,6 +455,7 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+      margin-top: -72px;
     }
   }
 
@@ -623,6 +636,9 @@
 
     &:nth-child(odd) {
       background: $colorDarkGrey;
+      @include minWidth($breakpointLargeDesktop) {
+        background: transparent;
+      }
     }
 
     z-index: 10;
@@ -665,8 +681,26 @@
     opacity: 0.9;
     max-width: 560px;
 
+    @include minWidth($breakpointLargeDesktop) {
+      max-width: 650px;
+    }
+
     @include maxWidth($breakpointSmallDesktop) {
       max-width: 100%;
+    }
+  }
+
+  &--content {
+    @include minWidth($breakpointLargeDesktop) {
+      margin: 220px 300px 120px;
+    }
+
+    @include maxWidth($breakpointSmallDesktop) {
+      margin: 120px 24px;
+    }
+
+    @include maxWidth($breakpointSmallDesktop) {
+      margin: 120px 18px;
     }
   }
 
@@ -749,11 +783,12 @@
   &--info {
     width: 100%;
 
-    @include maxWidth($breakpointSmallDesktop) {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
+    @include maxWidth($breakpointDesktop) {
       flex-direction: column;
+    }
+
+    @include minWidth($breakpointSmallDesktop) {
+      flex-direction: row;
     }
 
     &__opinion {
