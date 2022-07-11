@@ -158,18 +158,20 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border: none;
+    transition: none;
     outline: none;
 
-    @include widthBetween($breakpointTablet, $breakpointSmallDesktop) {
-      max-width: calc(100vw - 61px);
-    }
-
-    @include maxWidth($breakpointTablet) {
-      max-width: 100%;
-    }
 
     @include maxWidth($mobileContainerW) {
       padding-left: 10px;
+    }
+
+    @include widthBetween($mobileContainerW, $breakpointSmallDesktop) {
+      max-width: calc(100vw - 61px);
+    }
+
+    @include maxWidth($breakpointMobile) {
+      max-width: 100%;
     }
 
     &::placeholder {
@@ -692,7 +694,7 @@
 
   &--content {
     @include minWidth($breakpointLargeDesktop) {
-      margin: 220px 300px 120px;
+      margin: 220px auto 120px;
     }
 
     @include maxWidth($breakpointSmallDesktop) {
