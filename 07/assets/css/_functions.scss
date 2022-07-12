@@ -1,0 +1,15 @@
+@function getContainerWidth($width) {
+  @if ($width < $breakpointMobile) {
+    @return calc(100% - 36px);
+  }
+
+  $containers: (
+          $breakpointMobile: $mobileContainerW,
+          $breakpointTablet: $tabletContainerW,
+          $breakpointSmallDesktop: $smallDesktopContainerW,
+          $breakpointDesktop: $desktopContainerW,
+          $breakpointLargeDesktop: $largeDesktopContainerW,
+  );
+
+  @return map-get($containers, $width);
+}

@@ -1,0 +1,21 @@
+:before,
+:after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all, 0.5s;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}

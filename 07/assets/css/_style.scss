@@ -1,0 +1,57 @@
+.article{
+  &--subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+  }
+  &--title{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #2F281E;
+    margin-bottom: 20px;
+  }
+  &--text{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    margin-bottom: 40px;
+  }
+  &--list{
+    &-item{
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+      color: #2F281E;
+      margin-bottom: 10px;
+
+    &-text{
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #544837;
+    }
+    }
+    &-background{
+      background: #FF9900;
+      width: 35px;
+      max-height: 35px;
+      padding: 11px 0;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 10px;
+    }
+  }
+}

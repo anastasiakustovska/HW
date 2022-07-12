@@ -1,0 +1,217 @@
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 5px;
+  }
+}
+:before,
+:after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all, 0.5s;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.d-flex__justify--flex-end {
+  justify-content: flex-end;
+}
+.d-flex__justify--flex-start {
+  justify-content: flex-start;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.only-mobile {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .only-mobile {
+    display: block;
+  }
+}
+
+.d-flex__flex-direction--column {
+  flex-direction: column;
+}
+
+.d-flex__justify--center {
+  justify-content: center;
+}
+@media screen and (max-width: 992px) {
+  .d-flex__justify--center-tablet {
+    justify-content: center;
+  }
+}
+
+.d-flex__direction--row {
+  flex-direction: row;
+}
+
+.d-flex__direction--row-reverse {
+  flex-direction: row-reverse;
+}
+
+.d-flex__align-items--center {
+  align-items: center;
+}
+
+.d-block {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-initial {
+  text-align: initial;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.d-flex__justify--space-between {
+  justify-content: space-between;
+}
+
+.d-flex__justify--space-around {
+  justify-content: space-around;
+}
+
+.w-50 {
+  width: 50%;
+}
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.container {
+  margin: auto;
+  max-width: calc(100% - 36px);
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 944px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+.text-white {
+  color: white;
+}
+
+.article--subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #544837;
+}
+.article--title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #2F281E;
+  margin-bottom: 20px;
+}
+.article--text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #544837;
+  margin-bottom: 40px;
+}
+.article--list-item {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #2F281E;
+  margin-bottom: 10px;
+}
+.article--list-item-text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #544837;
+}
+.article--list-background {
+  background: #FF9900;
+  width: 35px;
+  max-height: 35px;
+  padding: 11px 0;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=app.css.map */

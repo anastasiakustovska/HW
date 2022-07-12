@@ -1,0 +1,142 @@
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__justify--flex-end {
+    justify-content: flex-end;
+  }
+
+  &__justify--flex-start {
+    justify-content: flex-start;
+  }
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.only {
+  &-mobile {
+
+    display: none;
+    @include maxWidth($breakpointMobile) {
+      display: block;
+    }
+  }
+}
+
+.d-flex__flex-direction--column {
+  flex-direction: column;
+}
+
+.d-flex__justify--center {
+  justify-content: center;
+
+  @include maxWidth($breakpointSmallDesktop) {
+    &-tablet {
+      justify-content: center;
+    }
+  }
+}
+.d-flex__direction--row{
+  flex-direction: row;
+}
+
+.d-flex__direction--row-reverse {
+  flex-direction: row-reverse;
+}
+
+.d-flex__align-items--center {
+  align-items: center;
+}
+
+.d-block {
+  display: block;
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+
+  &-initial {
+    text-align: initial;
+  }
+
+  &-uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.p {
+  &-relative {
+    position: relative;
+  }
+}
+
+.d-flex__justify--space-between {
+  justify-content: space-between;
+}
+
+.d-flex__justify--space-around {
+  justify-content: space-around;
+}
+
+.w {
+  &-50 {
+    width: 50%;
+  }
+
+  &-100 {
+    width: 100%;
+  }
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.container {
+  margin: auto;
+  max-width: calc(100% - 36px);
+
+  @include minWidth($breakpointMobile) {
+    max-width: getContainerWidth($breakpointMobile);
+  }
+
+  @include minWidth($breakpointTablet) {
+    max-width: getContainerWidth($breakpointTablet);
+  }
+
+  @include minWidth($breakpointSmallDesktop) {
+    max-width: getContainerWidth($breakpointSmallDesktop);
+  }
+
+  @include minWidth($breakpointDesktop) {
+    max-width: getContainerWidth($breakpointDesktop);
+  }
+
+  @include minWidth($breakpointLargeDesktop) {
+    max-width: getContainerWidth($breakpointLargeDesktop);
+  }
+}
+
+.hidden {
+  display: none;
+
+  &-mobile {
+    @include maxWidth($breakpointMobile) {
+      display: none;
+    }
+  }
+}
+
+.text {
+  &-white {
+    color: $colorWhite;
+  }
+}

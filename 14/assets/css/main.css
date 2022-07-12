@@ -27,6 +27,10 @@ span, p, a {
     flex-direction: row-reverse;
 }
 
+.m-60 {
+    margin-bottom: 60px;
+}
+
 .header {
     height: 100px;
     padding: 0 135px;
@@ -490,7 +494,7 @@ path {
         flex-direction: column;
     }
 
-        .social--list {
+    .social--list {
         justify-content: center;
         margin-bottom: 40px;
         margin-top: 51px;
@@ -548,6 +552,7 @@ path {
         height: 250px;
         width: 100%;
     }
+
     .last-post-image {
         width: 100%;
     }
@@ -671,13 +676,16 @@ path {
     .copyright-info {
         margin-bottom: 50px;
     }
-    .article--text-category{
+
+    .article--text-category {
         margin-bottom: 30px;
     }
-    .article--title{
+
+    .article--title {
         margin-bottom: 10px;
     }
-    .article--date{
+
+    .article--date {
         margin-bottom: 40px;
     }
 }
