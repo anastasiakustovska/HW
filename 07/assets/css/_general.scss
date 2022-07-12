@@ -38,6 +38,13 @@
     }
   }
 }
+
+.m {
+  &b-30 {
+    margin-bottom: 30px;
+  }
+}
+
 .d-flex__direction--row{
   flex-direction: row;
 }
@@ -139,4 +146,8 @@
   &-white {
     color: $colorWhite;
   }
+}
+
+.w-50 {
+  width: 50%;
 }

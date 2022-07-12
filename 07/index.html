@@ -9,6 +9,7 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 </head>
 <body>
 <header class="block flex_space_between container">
@@ -102,8 +103,8 @@
         </div>
     </div>
     <div class="container text-initial">
-        <div class="d-flex d-flex__align-items--center d-flex__direction--row">
-            <div style="width: 50%">
+        <div class="d-flex d-flex__align-items--center d-flex__direction--row article">
+            <div class="w-50">
                 <div class="article--subtitle">
                     Effortless Validation for
                 </div>
@@ -115,41 +116,39 @@
                     the overall personality of the person.
                 </div>
                 <div class="article--list">
-                    <ul>
-                        <div class="m-60">
-                            <h5 class="article--list-item m-0">Accessory makers</h5>
-                            <span class="article--list-item-text">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</span>
-                        </div>
-                        <div class="m-60">
-                            <h5 class="article--list-item m-0">Alterationists</h5>
-                            <span class="article--list-item-text">If you are looking for a new way to promote your business that won’t cost you more money, </span>
-                        </div>
-                        <div class="m-60">
-                            <h5 class="article--list-item m-0">Custom Design designers</h5>
-                            <span class="article--list-item-text">If you are looking for a new way to promote your business that won’t cost you more money, </span>
-                        </div>
-                    </ul>
+                    <div class="mb-30">
+                        <h5 class="article--list-item m-0">Accessory makers</h5>
+                        <span class="article--list-item-text">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</span>
+                    </div>
+                    <div class="mb-30">
+                        <h5 class="article--list-item m-0">Alterationists</h5>
+                        <span class="article--list-item-text">If you are looking for a new way to promote your business that won’t cost you more money, </span>
+                    </div>
+                    <div class="mb-30">
+                        <h5 class="article--list-item m-0">Custom Design designers</h5>
+                        <span class="article--list-item-text">If you are looking for a new way to promote your business that won’t cost you more money, </span>
+                    </div>
                 </div>
             </div>
-            <div style="width: 50%">
-                <img alt="red" src="assets/images/redT-shirt.png">
+            <div class="w-50">
+                <img alt="red" class="article--img" src="assets/images/redT-shirt.png">
             </div>
         </div>
-        <div class="d-flex d-flex__align-items--center d-flex__direction--row-reverse">
-            <div style="width: 50%">
-                <div class="article--text-subtitle">
-                    Effortless Validation for
-                </div>
-                <h2 class="article--title">
-                    Design Professionals
-                </h2>
-                <div class="article--text">
-                    The Myspace page defines the individual, his or her characteristics, traits, personal choices and
-                    the overall personality of the person.
-                </div>
-                <div class="article--list">
-                    <ul>
-                        <div>
+        <div class="d-flex d-flex__align-items--center d-flex__direction--row-reverse article article--reversed">
+            <div class="w-50">
+                <div class="article--content">
+                    <div class="article--text-subtitle">
+                        Easier decision making for
+                    </div>
+                    <h2 class="article--title">
+                        Product Managers
+                    </h2>
+                    <div class="article--text">
+                        The Myspace page defines the individual, his or her characteristics, traits, personal choices
+                        and the overall personality of the person.
+                    </div>
+                    <div class="article--list">
+                        <div class="d-flex d-flex__justify--space-between d-flex__align-items--center mb-30">
                             <div class="article--list-background">
                                 <svg fill="none" height="13" viewBox="0 0 18 13" width="18"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -157,9 +156,11 @@
                                           fill="white"/>
                                 </svg>
                             </div>
-                            Never worry about overpaying for your energy bill again.
+                            <div class="article--list__text">
+                                Never worry about overpaying for your energy bill again.
+                            </div>
                         </div>
-                        <div>
+                        <div class="d-flex d-flex__justify--space-between d-flex__align-items--center mb-30">
                             <div class="article--list-background">
                                 <svg fill="none" height="13" viewBox="0 0 18 13" width="18"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -167,9 +168,11 @@
                                           fill="white"/>
                                 </svg>
                             </div>
-                            Never worry about overpaying for your energy bill again.
+                            <div class="article--list__text">
+                                We will only switch you to energy companies that we trust and will treat you right.
+                            </div>
                         </div>
-                        <div>
+                        <div class="d-flex d-flex__justify--space-between d-flex__align-items--center mb-30">
                             <div class="article--list-background">
                                 <svg fill="none" height="13" viewBox="0 0 18 13" width="18"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -177,46 +180,46 @@
                                           fill="white"/>
                                 </svg>
                             </div>
-                            Never worry about overpaying for your energy bill again.
+                            <div class="article--list__text">
+                                We track the markets daily and know where the savings are.
+                            </div>
                         </div>
-                    </ul>
+                    </div>
                 </div>
             </div>
-            <div style="width: 50%">
-                <img alt="blue" src="assets/images/blueT-shirt.png">
+            <div class="w-50">
+                <img alt="blue" class="article--img__reversed" src="assets/images/blueT-shirt.png">
             </div>
         </div>
-        <div class="d-flex d-flex__align-items--center d-flex__direction--row">
-            <div style="width: 50%">
+        <div class="d-flex d-flex__align-items--center d-flex__direction--row article">
+            <div class="w-50">
                 <div class="article--subtitle">
-                    Effortless Validation for
+                    Optimisation for
                 </div>
                 <h2 class="article--title">
-                    Design Professionals
+                    Marketers
                 </h2>
                 <div class="article--text">
-                    The Myspace page defines the individual, his or her characteristics, traits, personal choices and
-                    the overall personality of the person.
+                    Few would argue that, despite the advancements of feminism over the past three decades, women still
+                    face a double standard when it comes to their behavior.
                 </div>
                 <div class="article--list">
-                    <ul>
-                        <div class="m-60">
-                            <h5 class="article--list-item m-0">Accessory makers</h5>
-                            <span class="article--list-item-text">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</span>
-                        </div>
-                        <div class="m-60">
-                            <h5 class="article--list-item m-0">Alterationists</h5>
-                            <span class="article--list-item-text">If you are looking for a new way to promote your business that won’t cost you more money, </span>
-                        </div>
-                        <div class="m-60">
-                            <h5 class="article--list-item m-0">Custom Design designers</h5>
-                            <span class="article--list-item-text">If you are looking for a new way to promote your business that won’t cost you more money, </span>
-                        </div>
-                    </ul>
+                    <div class="m-60">
+                        <h5 class="article--list-item m-0">Accessory makers</h5>
+                        <span class="article--list-item-text">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</span>
+                    </div>
+                    <div class="m-60">
+                        <h5 class="article--list-item m-0">Alterationists</h5>
+                        <span class="article--list-item-text">If you are looking for a new way to promote your business that won’t cost you more money, </span>
+                    </div>
+                    <div class="m-60">
+                        <h5 class="article--list-item m-0">Custom Design designers</h5>
+                        <span class="article--list-item-text">If you are looking for a new way to promote your business that won’t cost you more money, </span>
+                    </div>
                 </div>
             </div>
-            <div style="width: 50%">
-                <img alt="red" src="assets/images/redT-shirt.png">
+            <div class="w-50">
+                <img alt="red" class="article--img" src="assets/images/yellowT-shirt.png">
             </div>
         </div>
     </div>

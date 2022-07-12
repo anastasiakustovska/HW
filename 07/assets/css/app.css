@@ -65,6 +65,10 @@ html {
   }
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .d-flex__direction--row {
   flex-direction: row;
 }
@@ -161,6 +165,23 @@ html {
   color: white;
 }
 
+.w-50 {
+  width: 50%;
+}
+
+.article {
+  margin-top: 100px;
+}
+.article--img {
+  float: right;
+}
+.article--img__reversed {
+  float: left;
+}
+.article--content {
+  margin: auto;
+  max-width: 505px;
+}
 .article--subtitle {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -187,6 +208,9 @@ html {
   color: #544837;
   margin-bottom: 40px;
 }
+.article--list__text {
+  max-width: 440px;
+}
 .article--list-item {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -207,8 +231,8 @@ html {
 .article--list-background {
   background: #FF9900;
   width: 35px;
-  max-height: 35px;
-  padding: 11px 0;
+  height: 35px;
+  padding: 9px;
   text-align: center;
   vertical-align: middle;
   border-radius: 10px;
