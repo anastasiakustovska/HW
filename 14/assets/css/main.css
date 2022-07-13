@@ -27,10 +27,6 @@ span, p, a {
     flex-direction: row-reverse;
 }
 
-.m-60 {
-    margin-bottom: 60px;
-}
-
 .header {
     height: 100px;
     padding: 0 135px;
