@@ -3,7 +3,11 @@ body {
 }
 
 * {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
   transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 
@@ -116,13 +120,23 @@ ul {
   margin: 15px 15px;
   position: relative;
 }
+.card:hover .btn-blue {
+  background: #FD8D7B;
+}
 .card--selected {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
   transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 .card--selected:hover {
   width: 400px;
   height: 675px;
+}
+.card--selected:hover .tooltip {
+  display: block;
 }
 .card--selected:hover .card--content {
   padding-top: 15px;
@@ -250,7 +264,11 @@ ul {
   line-height: 18px;
   font-weight: 400;
   font-family: "Bebas_Bold", sans-serif;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
   transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 .btn-rounded {
@@ -262,13 +280,6 @@ ul {
 }
 .btn-blue:hover {
   background: #FD8D7B;
-}
-.btn-red {
-  color: #FFFFFF;
-  background: #FD8D7B;
-}
-.btn-red:hover {
-  background: #6FCFFB;
 }
 
 .circle {

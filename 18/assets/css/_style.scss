@@ -5,11 +5,20 @@
   margin: 15px 15px;
   position: relative;
 
+  &:hover {
+    .btn-blue {
+      background: $colorRed;
+    }
+  }
+
   &--selected {
     &:hover {
       width: 400px;
       height: 675px;
 
+      .tooltip {
+        display: block;
+      }
 
       .card--content {
         padding-top: 15px;
@@ -172,15 +181,6 @@
 
     color: $colorWhite;
     background: $colorBlue;
-  }
-
-  &-red {
-    &:hover {
-      background: $colorBlue;
-    }
-
-    color: $colorWhite;
-    background: $colorRed;
   }
 }
 
