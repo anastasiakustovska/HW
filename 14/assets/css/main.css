@@ -20,11 +20,54 @@ span, p, a {
 }
 
 .d-flex__align-items--center {
+    align-items: center !important;
+}
+* {
+    transition: all, 0.5s;
+}
+
+.d-flex__align-items--center {
     align-items: center;
 }
 
 .d-flex__direction--row-reverse {
     flex-direction: row-reverse;
+}
+
+.text-link:hover .text-link--label {
+    display: inline-block;
+    margin-right: 11px;
+}
+
+.text-link--label {
+    display: none;
+}
+
+
+.last-post .post--info {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.popular-post .article--date {
+    margin: 0;
+}
+
+.last-post .article--text-category {
+    margin: 0;
+}
+
+.popular-post .post--info {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.popular-post .article--text-category {
+    margin: 0;
+}
+
+.last-post .article--date {
+    margin: 0;
 }
 
 .header {
@@ -171,9 +214,6 @@ ul.nav-list {
     width: 370px;
 }
 
-.arrow-icon {
-    margin-left: 11px;
-}
 
 .section-info {
     margin-bottom: 50px;
