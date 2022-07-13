@@ -81,7 +81,7 @@
   }
 
   &--icon-logo {
-    margin: 0 25px 58px;
+    margin: 0 25px 40px;
   }
 
   &--icon-opened {
@@ -98,7 +98,7 @@
 
   &--section-start {
     margin-top: 30px;
-    padding-bottom: 28px;
+    padding-bottom: 12px;
   }
 
   @include transition(0.5s, width)
@@ -118,7 +118,7 @@
     }
 
     &--toggle {
-      right: 20px;
+      right: 15px;
     }
 
     &--icon {
@@ -233,3 +233,12 @@
   right: 0;
   @include round(10px);
 }
+
+.text {
+  &--purple {
+    &__dark {
+      color: $colorPurpleDark;
+    }
+  }
+}
+

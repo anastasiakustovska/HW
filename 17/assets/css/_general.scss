@@ -1,12 +1,13 @@
-.d-flex{
+.d-flex {
   display: flex;
   flex-wrap: wrap;
 }
+
 .d-flex__flex-direction--column {
   flex-direction: column;
 }
 
-.d-flex__justify--center{
+.d-flex__justify--center {
   justify-content: center;
 
   @include maxWidth($breakpointTablet) {
@@ -24,7 +25,7 @@
   align-items: center;
 }
 
-.d-block{
+.d-block {
   display: block;
 }
 
@@ -58,7 +59,7 @@
   position: absolute;
 }
 
-.container{
+.container {
   width: 90%;
   max-width: 1170px;
   margin: auto;
