@@ -113,7 +113,7 @@ h1 {
   font-size: 48px;
   line-height: 64px;
   letter-spacing: 0.05em;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 580px) {
   .footer--title {
@@ -142,6 +142,13 @@ h1 {
 .main-info--text {
   max-width: 50%;
 }
+.main--heading {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  margin-bottom: 70px;
+}
 @media screen and (max-width: 1024px) {
   .main--heading {
     margin-top: 68px;
@@ -151,11 +158,6 @@ h1 {
 .social--list {
   justify-content: center;
   margin-bottom: 40px;
-}
-@media screen and (max-width: 1024px) {
-  .social--list {
-    margin-top: 40px;
-  }
 }
 .social--link {
   margin: 0 12px;

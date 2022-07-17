@@ -30,7 +30,7 @@
     font-size: 48px;
     line-height: 64px;
     letter-spacing: 0.05em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     @include maxWidth($breakpointMobile) {
       font-weight: 400;
@@ -62,6 +62,12 @@
   }
 
   &--heading {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    margin-bottom: 70px;
+
     @include maxWidth($breakpointTablet) {
       margin-top: 68px;
     }
@@ -72,10 +78,6 @@
   &--list {
     justify-content: center;
     margin-bottom: 40px;
-
-    @include maxWidth($breakpointTablet) {
-      margin-top: 40px;
-    }
   }
 
   &--link {
