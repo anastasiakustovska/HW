@@ -42,11 +42,24 @@
     line-height: 26px;
     color: #544837;
     margin-bottom: 40px;
+
+    &-subtitle {
+      color: #544837;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 
   &--list {
     &__text {
       max-width: 440px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #544837;
     }
 
     &-item {

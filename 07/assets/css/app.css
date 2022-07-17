@@ -208,8 +208,20 @@ html {
   color: #544837;
   margin-bottom: 40px;
 }
+.article--text-subtitle {
+  color: #544837;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
 .article--list__text {
   max-width: 440px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #544837;
 }
 .article--list-item {
   font-family: "Montserrat", sans-serif;
